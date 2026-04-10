@@ -2,6 +2,12 @@
   "identity": {
     "file_name": "identity.json"
   },
+  "identity_hahaha": {
+    "file_name": "identity_hahaha.json"
+  },
+  "identity_copy": {
+    "file_name": "identity_copy.json"
+  },
   "alpaca_en_demo": {
     "file_name": "alpaca_en_demo.json"
   },
