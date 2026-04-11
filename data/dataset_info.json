@@ -5,6 +5,12 @@
   "identity_hahaha": {
     "file_name": "identity_hahaha.json"
   },
+  "poet_hahaha": {
+    "file_name": "poet_hahaha.json"
+  },
+  "choose_best_200sent_formatted": {
+    "file_name": "choose_best_200sent_formatted.json"
+  },
   "identity_copy": {
     "file_name": "identity_copy.json"
   },
