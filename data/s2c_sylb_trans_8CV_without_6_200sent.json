@@ -1,0 +1,877 @@
+[
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: tian nei wo jie sai zai shang\n序列 2: tian lai wo jie sai zai shang\n序列 3: tian nei wo jie sa zai shang\n序列 4: tian lai wo jie sa zai shang\n序列 5: tian gei wo jie sai zai shang\n序列 6: tian gei wo jie sa zai shang\n序列 7: tian nei wo yan sai zai shang\n序列 8: tian lai wo yan sai zai shang\n序列 9: tian nei wo yan sa zai shang\n序列 10: tian nei wo ye sai zai shang\nTop K 汉字序列 (按联合概率排序):\n序列 1: 妹奶把盐撒菜上\n序列 2: 美奶把盐撒菜上\n序列 3: 奶奶把盐撒菜上\n序列 4: 每年我盐撒菜上\n序列 5: 美得把盐撒菜上\n序列 6: 妹得把盐撒菜上\n序列 7: 美请把盐撒菜上\n序列 8: 妹请把盐撒菜上\n序列 9: 天空调盐撒菜上\n序列 10: 流泪我盐撒菜上",
+    "output": "奶奶把盐撒菜上"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: jian ba er hen yao qi tong\n序列 2: jian ba er hen yao qi yao\n序列 3: jian ba er heng yao qi tong\n序列 4: jian ba er heng yao qi yao\n序列 5: jian bao er hen yao qi tong\n序列 6: jian bao er hen yao qi yao\n序列 7: jian bang er hen yao qi tong\n序列 8: jian ba er hen you qi tong\n序列 9: jian bao er heng yao qi tong\n序列 10: jian bang er hen yao qi yao\nTop K 汉字序列 (按联合概率排序):\n序列 1: 肩膀偶尔有些痛\n序列 2: 间膀偶尔有些痛\n序列 3: 见膀偶尔有些痛\n序列 4: 肩膀偶尔有些痛\n序列 5: 肩膀偶尔有些痛\n序列 6: 肩膀尔尔有些痛\n序列 7: 肩膀尔尔有些痛\n序列 8: 肩膀二尔有些痛\n序列 9: 肩膀偶尔有些痛\n序列 10: 餐膀偶尔有些痛",
+    "output": "肩膀偶尔有些痛"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: shua peng yao wai dui fang qian\n序列 2: zhou peng yao wai dui fang qian\n序列 3: shua peng yao wai dui fu qian\n序列 4: zhou peng yao wai dui fu qian\n序列 5: shua peng yao wai dui fan qian\n序列 6: zhou peng yao wai dui fan qian\n序列 7: shou peng yao wai dui fang qian\n序列 8: chao peng yao wai dui fang qian\n序列 9: shou peng yao wai dui fu qian\n序列 10: chao peng yao wai dui fu qian\nTop K 汉字序列 (按联合概率排序):\n序列 1: 送朋友排队放学\n序列 2: 小朋友排队放学\n序列 3: 首朋友排队放学\n序列 4: 者朋友排队放学\n序列 5: 所朋友排队放学\n序列 6: 车朋友排队放学\n序列 7: 身朋友排队放学\n序列 8: 造朋友排队放学\n序列 9: 棍朋友排队放学\n序列 10: 伤朋友排队放学",
+    "output": "小朋友排队放学"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: zhe lve jin bai you de zi dian\n序列 2: zhe lve jin pang you de zi dian\n序列 3: zhe lve jin pai you de zi dian\n序列 4: zhe lve jin bai you de zi jian\n序列 5: zhe lve jin pang you de zi jian\n序列 6: zhe lve jin pai you de zi jian\n序列 7: zhe lve jin bai you de zi yan\n序列 8: zhe lve jin mang you de zi dian\n序列 9: zhe lve jin mai you de zi dian\n序列 10: zhe lve jin pang you de zi yan\nTop K 汉字序列 (按联合概率排序):\n序列 1: 这面盾牌能挡子弹\n序列 2: 者略禁旁能挡子弹\n序列 3: 者略禁旁能挡子弹\n序列 4: 者略禁牌能挡子弹\n序列 5: 者略禁牌能挡子弹\n序列 6: 者面盾牌能挡子弹\n序列 7: 者严禁旁能挡子弹\n序列 8: 着眼睛旁能挡子弹\n序列 9: 者严禁牌能挡子弹\n序列 10: 者略盾牌能挡子弹",
+    "output": "这面盾牌能挡子弹"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: bu you nin dian tai lie\n序列 2: bu you xing dian tai lie\n序列 3: wo you nin dian tai lie\n序列 4: bu qiong nin dian tai lie\n序列 5: bu you lve dian tai lie\n序列 6: bu nao nin dian tai lie\n序列 7: wo you xing dian tai lie\n序列 8: bu qiong xing dian tai lie\n序列 9: bu nao xing dian tai lie\n序列 10: bu yao nin dian tai lie\nTop K 汉字序列 (按联合概率排序):\n序列 1: 不能虐待奶牛\n序列 2: 步能虐待奶牛\n序列 3: 不能虐待奶牛\n序列 4: 布料虐待奶牛\n序列 5: 仆能虐待奶牛\n序列 6: 步奶牛奶奶牛\n序列 7: 雾能虐待奶牛\n序列 8: 物能虐待奶牛\n序列 9: 牛奶牛奶奶牛\n序列 10: 不能虐待开脸",
+    "output": "不能虐待奶牛"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: wo jue ding qu tai suo lun yi er\n序列 2: wo jue ding qu tai qi lun yi er\n序列 3: wo jue ding qu tai xing lun yi er\n序列 4: wo jue ding qu tai che lun yi er\n序列 5: wo jue ding qu te suo lun yi er\n序列 6: wo jue ding qu tai xian lun yi er\n序列 7: wo jue ding qu tai suan lun yi er\n序列 8: wo jue ding qu te qi lun yi er\n序列 9: wo jue ding qu tai suo wen yi er\n序列 10: wo jue ding qu te xing lun yi er\nTop K 汉字序列 (按联合概率排序):\n序列 1: 我决定去厕所蹲一会\n序列 2: 我决定去厕所蹲一切\n序列 3: 我决定去厕所论易吗\n序列 4: 我决定去厕所论易吗\n序列 5: 我决定去厕所蹲一瓶\n序列 6: 我决定去厕所蹲一会\n序列 7: 我决定去厕所蹲一会\n序列 8: 阔决定去厕所蹲一会\n序列 9: 我决定去厕所容易吗\n序列 10: 我决定去厕所蹲一切",
+    "output": "我决定去厕所蹲一会"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: nin bie me de miao xiang za wu\n序列 2: nin bie me de miao xiang ca wu\n序列 3: nin bie me de mao xiang za wu\n序列 4: nin bie me de mao xiang ca wu\n序列 5: nin bie me de miao xiang za huo\n序列 6: nin bie me de miao xiang ca huo\n序列 7: nin bie me de miao xi za wu\n序列 8: nin bie me de miao xian za wu\n序列 9: nin bie me de miao xiang za hua\n序列 10: nin bie me de miao xi ca wu\nTop K 汉字序列 (按联合概率排序):\n序列 1: 您别挪动那些杂物\n序列 2: 您别多鸟那些杂物\n序列 3: 您别挪动那些杂物\n序列 4: 您别拽着他的杂物\n序列 5: 您别挪动那条杂物\n序列 6: 您别挪动那片杂物\n序列 7: 您别多鸟危险杂物\n序列 8: 您别多鸟票些杂物\n序列 9: 您别多鸟票些杂物\n序列 10: 您别蔑视那些杂物",
+    "output": "您别挪动那些杂物"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: yue ge sao chai zai\n序列 2: yo ge sao chai zai\n序列 3: yue guang sao chai zai\n序列 4: yue guo sao chai zai\n序列 5: yuan ge sao chai zai\n序列 6: yo guang sao chai zai\n序列 7: yo guo sao chai zai\n序列 8: yuan guang sao chai zai\n序列 9: yuan guo sao chai zai\n序列 10: yue gua sao chai zai\nTop K 汉字序列 (按联合概率排序):\n序列 1: 月光洒窗台\n序列 2: 月光洒窗户\n序列 3: 约光洒窗台\n序列 4: 怨光洒窗台\n序列 5: 月光洒窗台\n序列 6: 野光洒窗台\n序列 7: 夜光洒窗台\n序列 8: 业光洒窗台\n序列 9: 叶光洒窗台\n序列 10: 于光洒窗台",
+    "output": "月光洒窗台"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: tuan gun gun qia shan po\n序列 2: tuan gun gun tiao shan po\n序列 3: tuan gun kun qia shan po\n序列 4: tuan gun kun tiao shan po\n序列 5: tuan gun gun qiang shan po\n序列 6: tuan gun kun qiang shan po\n序列 7: tuan kun gun qia shan po\n序列 8: tuan kun gun tiao shan po\n序列 9: tuan kun kun qia shan po\n序列 10: tuan gun gun tian shan po\nTop K 汉字序列 (按联合概率排序):\n序列 1: 铁棍滚下山坡\n序列 2: 腿棍滚下山坡\n序列 3: 落棍滚下山坡\n序列 4: 驼棍滚下山坡\n序列 5: 禁棍滚下山坡\n序列 6: 队棍滚下山坡\n序列 7: 片棍滚下山坡\n序列 8: 雨棍滚下山坡\n序列 9: 宇棍滚下山坡\n序列 10: 于棍滚下山坡",
+    "output": "铁棍滚下山坡"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: tang zhen xiang jin kuai lve bian ma\n序列 2: tang zhen xiang jin huai lve bian ma\n序列 3: nai zhen xiang jin kuai lve bian ma\n序列 4: nai zhen xiang jin huai lve bian ma\n序列 5: tang ting xiang jin kuai lve bian ma\n序列 6: tang ting xiang jin huai lve bian ma\n序列 7: tang zhen xiang jin kuai lve mian ma\n序列 8: tang zhen xiang jin huai lve mian ma\n序列 9: tang zhen xia jin kuai lve bian ma\n序列 10: tang zhen xia jin huai lve bian ma\nTop K 汉字序列 (按联合概率排序):\n序列 1: 他吞下几块冷面包\n序列 2: 碍吞下几块冷面包\n序列 3: 店吞下几块冷面包\n序列 4: 待吞下几块冷面包\n序列 5: 牌吞下几块冷面包\n序列 6: 派吞下几块冷面包\n序列 7: 蛋吞下几块冷面包\n序列 8: 牙吞下几块冷面包\n序列 9: 他吞下几块略瓶吗\n序列 10: 他吞下几块略瓶吗",
+    "output": "他吞下几块冷面包"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: fen nuan cen jiang you ai nei chuang\n序列 2: fen nuan cen qie you ai nei chuang\n序列 3: fen nuan cen jiang you ai ling chuang\n序列 4: fen nuan cen jiang you ei nei chuang\n序列 5: fen nuan cen jiang you ai nei cang\n序列 6: fen nuan cen jiang you ai lin chuang\n序列 7: fen nuan cen jia you ai nei chuang\n序列 8: fen nuan cen jiang gou ai nei chuang\n序列 9: fen nuan cen qiang you ai nei chuang\n序列 10: wen nuan cen jiang you ai nei chuang\nTop K 汉字序列 (按联合概率排序):\n序列 1: 温暖的家由爱垒成\n序列 2: 温暖的家由爱垒成\n序列 3: 温暖的家由爱垒成\n序列 4: 温暖的家由爱垒成\n序列 5: 为暖的家由爱垒成\n序列 6: 非暖的家由爱垒成\n序列 7: 为暖的家由爱垒成\n序列 8: 们暖的家由爱垒成\n序列 9: 棍暖的家由爱垒成\n序列 10: 非暖的家由爱垒成",
+    "output": "温暖的家由爱垒成"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: xiang long zheng cuan zai tian kang fei\n序列 2: xiang long jing cuan zai tian kang fei\n序列 3: xiang long zheng quan zai tian kang fei\n序列 4: xiang long zeng cuan zai tian kang fei\n序列 5: xiang long jing quan zai tian kang fei\n序列 6: xiang long zeng quan zai tian kang fei\n序列 7: xiang long zheng cun zai tian kang fei\n序列 8: xiang long jing cun zai tian kang fei\n序列 9: xiang long zeng cun zai tian kang fei\n序列 10: xiang long zheng can zai tian kang fei\nTop K 汉字序列 (按联合概率排序):\n序列 1: 小风筝窜在天空飞\n序列 2: 箱风筝窜在天空飞\n序列 3: 刮风筝窜在天空飞\n序列 4: 散步筝窜在天空飞\n序列 5: 险风筝窜在天空飞\n序列 6: 烈风筝窜在天空飞\n序列 7: 狂风筝窜在天空飞\n序列 8: 校风筝窜在天空飞\n序列 9: 箱土筝窜在天空飞\n序列 10: 身风筝窜在天空飞",
+    "output": "小风筝窜在天空飞"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: wo ji hua qun mao wen que\n序列 2: wo ji hua qun mou wen que\n序列 3: wo ji hua qun ma wen que\n序列 4: wo ji hua qun zhuan wen que\n序列 5: wo ji hua qun wan wen que\n序列 6: wo ji hua qun mao wen qian\n序列 7: wo ji hua qun mao fen que\n序列 8: wo ji huan qun mao wen que\n序列 9: wo ji hua qun me wen que\n序列 10: wo ji hua qun bang wen que\nTop K 汉字序列 (按联合概率排序):\n序列 1: 我计划去泡温泉\n序列 2: 设计划去泡温泉\n序列 3: 我计划去泡温泉\n序列 4: 我计划去上午餐\n序列 5: 妙计划去泡温泉\n序列 6: 阔计划去泡温泉\n序列 7: 我计划裙泡温泉\n序列 8: 我计划裙泡温泉\n序列 9: 国计划去泡温泉\n序列 10: 果计划去泡温泉",
+    "output": "我计划去泡温泉"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: ta ken me kai zhe tuan mi wu\n序列 2: ta ken mou kai zhe tuan mi wu\n序列 3: ta ken me kai zhe tuan min wu\n序列 4: ta ken mou kai zhe tuan min wu\n序列 5: ta gan me kai zhe tuan mi wu\n序列 6: ta gan mou kai zhe tuan mi wu\n序列 7: ta ken bu kai zhe tuan mi wu\n序列 8: ta gan me kai zhe tuan min wu\n序列 9: ta ken ba kai zhe tuan mi wu\n序列 10: ta ken beng kai zhe tuan mi wu\nTop K 汉字序列 (按联合概率排序):\n序列 1: 他肯剖开这团迷雾\n序列 2: 他肯剖开这团迷雾\n序列 3: 不肯剖开这团迷雾\n序列 4: 他尴尬开这团迷雾\n序列 5: 造肯剖开这团迷雾\n序列 6: 头肯剖开这团迷雾\n序列 7: 此肯剖开这团迷雾\n序列 8: 尬肯剖开这团迷雾\n序列 9: 驼肯剖开这团迷雾\n序列 10: 入肯剖开这团迷雾",
+    "output": "他肯剖开这团迷雾"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: hen reng cun wo yi pen fei huai\n序列 2: hen reng zhen wo yi pen fei huai\n序列 3: hen reng cun wo yi pen fei wai\n序列 4: hen reng zhen wo yi pen fei wai\n序列 5: hen reng can wo yi pen fei huai\n序列 6: hen reng cun wo yi pen kui huai\n序列 7: hen reng cun wo yi men fei huai\n序列 8: hen reng ceng wo yi pen fei huai\n序列 9: hen reng ren wo yi pen fei huai\n序列 10: hen reng zhen wo yi pen kui huai\nTop K 汉字序列 (按联合概率排序):\n序列 1: 恩人赠我一盆葵花\n序列 2: 恩人赠我一盆葵花\n序列 3: 老师对我一盆葵花\n序列 4: 本人赠我一盆葵花\n序列 5: 老师对我一盆葵花\n序列 6: 甩开对我一盆葵花\n序列 7: 高僧拽我一盆葵花\n序列 8: 本人赠我一盆葵花\n序列 9: 很疼对我一盆葵花\n序列 10: 们人赠我一盆葵花",
+    "output": "恩人赠我一盆葵花"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: wo bu dang ming pai tian wang\n序列 2: wo bu dang ming wai tian wang\n序列 3: wo bu dang ming pai tian ma\n序列 4: wo bu dang ming pai ni wang\n序列 5: wo bu de ming pai tian wang\n序列 6: wo bu dang ming pai xi wang\n序列 7: wo bu diao ming pai tian wang\n序列 8: wo bu dang ming wai tian ma\n序列 9: wo bu dai ming pai tian wang\n序列 10: wo bu dao ming pai tian wang\nTop K 汉字序列 (按联合概率排序):\n序列 1: 我不大明白天鹅\n序列 2: 我不大明白题目\n序列 3: 差不大明白天鹅\n序列 4: 也不大明白天鹅\n序列 5: 差不大明白题目\n序列 6: 都不大明白天鹅\n序列 7: 也不大明白题目\n序列 8: 都不大明白题目\n序列 9: 我不大明早餐望\n序列 10: 我不大明早餐吗",
+    "output": "我不大明白题目"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: zheng ceng me hen seng ruan yo\n序列 2: zheng ceng du hen seng ruan yo\n序列 3: zheng ceng me hen xing ruan yo\n序列 4: zeng ceng me hen seng ruan yo\n序列 5: zheng ceng duo hen seng ruan yo\n序列 6: zhuan ceng me hen seng ruan yo\n序列 7: zheng ceng du hen xing ruan yo\n序列 8: zheng ceng me hen song ruan yo\n序列 9: zhou ceng me hen seng ruan yo\n序列 10: zheng ceng tun hen seng ruan yo\nTop K 汉字序列 (按联合概率排序):\n序列 1: 这层土很松软哟\n序列 2: 分层土很松软哟\n序列 3: 筝层土很松软哟\n序列 4: 者层土很松软哟\n序列 5: 京层土很松软哟\n序列 6: 睛层土很松软哟\n序列 7: 警层土很松软哟\n序列 8: 静层土很松软哟\n序列 9: 舱层土很松软哟\n序列 10: 饺层土很松软哟",
+    "output": "这层土很松软哟"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: wo men jue shi kai yang\n序列 2: wo men jue she kai yang\n序列 3: wo men jue sha kai yang\n序列 4: wo men jue shi kai kai\n序列 5: wo men jue shi kai gang\n序列 6: wo men jue she kai kai\n序列 7: wo men jue she kai gang\n序列 8: wo men jue shi kai kang\n序列 9: wo men jue shou kai yang\n序列 10: wo men jue shan kai yang\nTop K 汉字序列 (按联合概率排序):\n序列 1: 我们去晒太阳\n序列 2: 我们去晒太阳\n序列 3: 我们确实太阳\n序列 4: 我们确实开脸\n序列 5: 果们去晒太阳\n序列 6: 国们去晒太阳\n序列 7: 我们洗过太阳\n序列 8: 我们切晒太阳\n序列 9: 我们切晒太阳\n序列 10: 我们且晒太阳",
+    "output": "我们去晒太阳"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: cuan zhe ruan sang kong se lve fu\n序列 2: cuan zhe ruan sang kong se juan fu\n序列 3: cuan zhe chuan sang kong se lve fu\n序列 4: cuan zhe chuan sang kong se juan fu\n序列 5: cuan zhe ruan sang kong zi lve fu\n序列 6: cuan zhe ruan sang kong zi juan fu\n序列 7: cuan zhe chuan sang kong zi lve fu\n序列 8: cuan zhe chuan sang kong zi juan fu\n序列 9: cuan zhe ruan sang kong se ren fu\n序列 10: cuan zhe chuan sang kong se ren fu\nTop K 汉字序列 (按联合概率排序):\n序列 1: 尊者穿上红色礼服\n序列 2: 尊者穿上红色礼服\n序列 3: 造者穿上红色礼服\n序列 4: 造者穿上红色礼服\n序列 5: 餐者穿上红色礼服\n序列 6: 蛋者穿上红色礼服\n序列 7: 餐者穿上红色礼服\n序列 8: 蛋者穿上红色礼服\n序列 9: 管者穿上红色礼服\n序列 10: 掉者穿上红色礼服",
+    "output": "尊者穿上红色礼服"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: zan qun shou miu chuang yue diao sheng\n序列 2: zan qun shou miu chuang yue tang sheng\n序列 3: zan qun shou miu chuang yue yong sheng\n序列 4: zan qun shou yong chuang yue diao sheng\n序列 5: zan qun shou diu chuang yue diao sheng\n序列 6: zan qun shou miu chuang nve diao sheng\n序列 7: zan qun shou yong chuang yue tang sheng\n序列 8: zan qun shou diu chuang yue tang sheng\n序列 9: zan qun shou yong chuang yue yong sheng\n序列 10: zan qun shou diu chuang yue yong sheng\nTop K 汉字序列 (按联合概率排序):\n序列 1: 短裙少女绰约嗲声\n序列 2: 蛋裙少女绰约嗲声\n序列 3: 短裙少女绰约嗲声\n序列 4: 短裙少女绰约嗲声\n序列 5: 南裙少女绰约嗲声\n序列 6: 短裙少女绰约嗲声\n序列 7: 间裙少女绰约嗲声\n序列 8: 见裙少女绰约嗲声\n序列 9: 短裙少女绰约叫声\n序列 10: 短裙少女绰约掉声",
+    "output": "短裙少女绰约嗲声"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: ta zhe gan qu hui jin shi\n序列 2: ta zhe gan shou hui jin shi\n序列 3: ta zhe gan fou hui jin shi\n序列 4: ta zhe gan zhua hui jin shi\n序列 5: ta zhe gan qu hui xin shi\n序列 6: ta zhe gan ru hui jin shi\n序列 7: ta zhe gan zhong hui jin shi\n序列 8: ta zhe gan shou hui xin shi\n序列 9: ta zhe gan chu hui jin shi\n序列 10: ta zhe gan shu hui jin shi\nTop K 汉字序列 (按联合概率排序):\n序列 1: 躺着看书会近视\n序列 2: 造着看书会近视\n序列 3: 此着看书会近视\n序列 4: 况着看书会近视\n序列 5: 疼着看书会近视\n序列 6: 房着看书会近视\n序列 7: 虹着看书会近视\n序列 8: 炮着看书会近视\n序列 9: 论着看书会近视\n序列 10: 头着看书会近视",
+    "output": "躺着看书会近视"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: mu mu ji ni wai chi\n序列 2: mu po ji ni wai chi\n序列 3: ming mu ji ni wai chi\n序列 4: mu mu lu ni wai chi\n序列 5: ming po ji ni wai chi\n序列 6: mu po lu ni wai chi\n序列 7: ming mu lu ni wai chi\n序列 8: ming po lu ni wai chi\n序列 9: mu mu ji ni kou chi\n序列 10: mu po ji ni kou chi\nTop K 汉字序列 (按联合概率排序):\n序列 1: 奴仆努力推车\n序列 2: 命仆努力推车\n序列 3: 我和您别怕吃\n序列 4: 风沙就别怕吃\n序列 5: 山坡计精美适\n序列 6: 山坡计精美实\n序列 7: 山坡计精美视\n序列 8: 山坡计精美去\n序列 9: 山坡计精美去\n序列 10: 虹仆努力推车",
+    "output": "奴仆努力推车"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: bie rang dao wai rang\n序列 2: bie rang za wai rang\n序列 3: bie rang tai wai rang\n序列 4: bie rang tao wai rang\n序列 5: bie rang zhua wai rang\n序列 6: bie rang qia wai rang\n序列 7: bie rang dao ma rang\n序列 8: bie rang tang wai rang\n序列 9: bie rang dao na rang\n序列 10: bie rang za ma rang\nTop K 汉字序列 (按联合概率排序):\n序列 1: 别让他嚷嚷\n序列 2: 别让他踹开\n序列 3: 别让他高中\n序列 4: 美让他嚷嚷\n序列 5: 妹让他嚷嚷\n序列 6: 别让他酿了\n序列 7: 棉让他嚷嚷\n序列 8: 总让他嚷嚷\n序列 9: 只让他嚷嚷\n序列 10: 别让他打针",
+    "output": "别让他嚷嚷"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: huai qu jie ji ken la chu\n序列 2: huai qu jian ji ken la chu\n序列 3: huai chu jie ji ken la chu\n序列 4: huai chu jian ji ken la chu\n序列 5: huai qu jie ji ken la chi\n序列 6: huai qu jian ji ken la chi\n序列 7: wo qu jie ji ken la chu\n序列 8: wai qu jie ji ken la chu\n序列 9: huai qu jie ji keng la chu\n序列 10: huai chu jie ji ken la chi\nTop K 汉字序列 (按联合概率排序):\n序列 1: 快去借几根蜡烛\n序列 2: 块去借几根蜡烛\n序列 3: 快去借几根蜡烛\n序列 4: 碍去借几根蜡烛\n序列 5: 管去借几根蜡烛\n序列 6: 果去借几根蜡烛\n序列 7: 国去借几根蜡烛\n序列 8: 欢去借几根蜡烛\n序列 9: 阔去借几根蜡烛\n序列 10: 为去借几根蜡烛",
+    "output": "快去借几根蜡烛"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: lou meng ren diao chuai huo\n序列 2: lou meng ren de chuai huo\n序列 3: lou meng leng diao chuai huo\n序列 4: lou meng sheng diao chuai huo\n序列 5: lou meng zeng diao chuai huo\n序列 6: lou meng ren li chuai huo\n序列 7: lou meng shen diao chuai huo\n序列 8: lou meng zheng diao chuai huo\n序列 9: lou meng ren dia chuai huo\n序列 10: lou meng reng diao chuai huo\nTop K 汉字序列 (按联合概率排序):\n序列 1: 老翁扔掉柴火\n序列 2: 俩翁扔掉柴火\n序列 3: 落翁扔掉柴火\n序列 4: 老翁扔掉柴火\n序列 5: 所翁扔掉柴火\n序列 6: 老翁扔掉柴火\n序列 7: 头翁扔掉柴火\n序列 8: 调翁扔掉柴火\n序列 9: 掉翁扔掉柴火\n序列 10: 充翁扔掉柴火",
+    "output": "老翁扔掉柴火"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: neng zun xi ang you huo wei\n序列 2: neng zuo xi ang you huo wei\n序列 3: neng zun xi ang you hui wei\n序列 4: neng zun xi ang you huo ma\n序列 5: neng zun xi ang you wo wei\n序列 6: neng zun xi ang you huo bao\n序列 7: neng zuo xi ang you hui wei\n序列 8: neng zuo xi ang you huo ma\n序列 9: neng zuo xi ang you wo wei\n序列 10: neng zun xi ang you huo wai\nTop K 汉字序列 (按联合概率排序):\n序列 1: 令尊喜欢玉佩吗\n序列 2: 令尊喜欢玉佩吗\n序列 3: 令尊喜欢友回去\n序列 4: 缠尊喜欢玉佩吗\n序列 5: 禁尊喜欢玉佩吗\n序列 6: 间尊喜欢玉佩吗\n序列 7: 见尊喜欢玉佩吗\n序列 8: 遍尊喜欢玉佩吗\n序列 9: 边尊喜欢玉佩吗\n序列 10: 京尊喜欢玉佩吗",
+    "output": "令尊喜欢玉佩吗"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: wo he dian zai jue qu lve hao\n序列 2: wo he dian zai jue qu yue hao\n序列 3: wo he dian che jue qu lve hao\n序列 4: wo he dian che jue qu yue hao\n序列 5: wo he dian zhou jue qu lve hao\n序列 6: wo he jian zai jue qu lve hao\n序列 7: wo he dian jia jue qu lve hao\n序列 8: wo he dian zhou jue qu yue hao\n序列 9: wo he jian zai jue qu yue hao\n序列 10: wo he dian jia jue qu yue hao\nTop K 汉字序列 (按联合概率排序):\n序列 1: 我和您凑钱去远航\n序列 2: 我和您凑钱去远航\n序列 3: 我和您别凑去远航\n序列 4: 我和您凑钱去上海\n序列 5: 如何店凑钱去远航\n序列 6: 如何典凑钱去远航\n序列 7: 如何店凑钱去远航\n序列 8: 如何点凑钱去远航\n序列 9: 何和您凑钱去远航\n序列 10: 我计划凑钱去远航",
+    "output": "我和您凑钱去远航"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: ca ge er gui zai ke shi le\n序列 2: zai ge er gui zai ke shi le\n序列 3: ca ge er guo zai ke shi le\n序列 4: zai ge er guo zai ke shi le\n序列 5: ca ge er gui cai ke shi le\n序列 6: cai ge er gui zai ke shi le\n序列 7: ca ge er gui zai ke xi le\n序列 8: zai ge er gui cai ke shi le\n序列 9: ca ge er gui duan ke shi le\n序列 10: ca ge er gui de ke shi le\nTop K 汉字序列 (按联合概率排序):\n序列 1: 擦肩而过太可惜了\n序列 2: 擦肩而过太可惜了\n序列 3: 擦伤而过太可惜了\n序列 4: 我肩而过太可惜了\n序列 5: 擦伤而过太可惜了\n序列 6: 我肩而过太可惜了\n序列 7: 餐肩而过太可惜了\n序列 8: 擦肩而过太可爱哦\n序列 9: 夸赞而过太可惜了\n序列 10: 餐肩而过太可惜了",
+    "output": "擦肩而过太可惜了"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: jue kai wen lve shang qiu han lu\n序列 2: tian kai wen lve shang qiu han lu\n序列 3: jue kai wen lve shang cai han lu\n序列 4: jue kai wen lve shang xi han lu\n序列 5: jue kai wen lve shang qiu han luo\n序列 6: tian kai wen lve shang cai han lu\n序列 7: jue kai wen lve shang qiu hen lu\n序列 8: jue kai wen lve shang cou han lu\n序列 9: jue kai wen lve shang qian han lu\n序列 10: tian kai wen lve shang xi han lu\nTop K 汉字序列 (按联合概率排序):\n序列 1: 撇开恩怨向前看咯\n序列 2: 撇开恩怨向前看咯\n序列 3: 撇开恩怨向前看好\n序列 4: 撇开恩怨向前看好\n序列 5: 绕开恩怨向前看咯\n序列 6: 甩开恩怨向前看咯\n序列 7: 绕开恩怨向前看好\n序列 8: 踹开恩怨向前看咯\n序列 9: 甩开恩怨向前看好\n序列 10: 雪开恩怨向前看咯",
+    "output": "撇开恩怨向前看咯"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: you shi de wo zhe ting ge yi yi yi\n序列 2: liang shi de wo zhe ting ge yi yi yi\n序列 3: you shi de wo zhe ting ge duo yi yi\n序列 4: you shi de wo zhe ting ge ta yi yi\n序列 5: liang shi de wo zhe ting ge duo yi yi\n序列 6: liang shi de wo zhe ting ge ta yi yi\n序列 7: you shi de wo zhe ting ge yi duo yi\n序列 8: you shi de wo zhe ting ge peng yi yi\n序列 9: you shi de wo zhe ting ge chuan yi yi\n序列 10: you shi de wo zhe ting ge yi ta yi\nTop K 汉字序列 (按联合概率排序):\n序列 1: 老师对我决定个方向哦\n序列 2: 老师对我热情况提意见\n序列 3: 老师对我热情况易意见\n序列 4: 老师对我热情况以意见\n序列 5: 老师对我热情况容易吗\n序列 6: 老师对我热情况注意见\n序列 7: 老师对我热情况易易吗\n序列 8: 老师对我热情况以易吗\n序列 9: 老师对我热情地撇开脸\n序列 10: 老师对我热情况多意见",
+    "output": "老师对我热情又耐心哦"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: zhe zi shang mu zhui ta da zhen\n序列 2: zhe zai shang mu zhui ta da zhen\n序列 3: zhe can shang mu zhui ta da zhen\n序列 4: zhe shi shang mu zhui ta da zhen\n序列 5: zhe zi shang mu qu ta da zhen\n序列 6: zhe zai shang mu qu ta da zhen\n序列 7: zhe can shang mu qu ta da zhen\n序列 8: zhe shi shang mu qu ta da zhen\n序列 9: zhe zi shang mu zhui ta da ren\n序列 10: zhe zai shang mu zhui ta da ren\nTop K 汉字序列 (按联合概率排序):\n序列 1: 者子上午催他打针\n序列 2: 扇子上午催他打针\n序列 3: 者早上午催他打针\n序列 4: 周三上午催他打针\n序列 5: 者三上午催他打针\n序列 6: 者晚上午催他打针\n序列 7: 造子上午催他打针\n序列 8: 筝子上午催他打针\n序列 9: 这本上午催他打针\n序列 10: 块子上午催他打针",
+    "output": "周三上午催他打针"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: wo jue xiao xiong zai zhe li\n序列 2: wo jue xiang xiong zai zhe li\n序列 3: bu jue xiao xiong zai zhe li\n序列 4: wo jue xiao xiong zai zuo li\n序列 5: bu jue xiang xiong zai zhe li\n序列 6: wo jue xiang xiong zai zuo li\n序列 7: wo jue xiao xiong zai zhou li\n序列 8: wo jue xia xiong zai zhe li\n序列 9: bu jue xiao xiong zai zuo li\n序列 10: wo jue xiao xiong zai chi li\nTop K 汉字序列 (按联合概率排序):\n序列 1: 莫为小熊在这里\n序列 2: 步只小熊在这里\n序列 3: 步具小熊在这里\n序列 4: 步具小熊在这里\n序列 5: 我决定熊在这里\n序列 6: 三只小熊在这里\n序列 7: 旁的小熊在这里\n序列 8: 玩具小熊在这里\n序列 9: 步为小熊在这里\n序列 10: 玩具小熊在这里",
+    "output": "玩具小熊在这里"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: xiang hui qu geng yue can fu\n序列 2: xiang huan qu geng yue can fu\n序列 3: xiang hui qu geng yue can ma\n序列 4: xiang hui qu gong yue can fu\n序列 5: xiang huan qu geng yue can ma\n序列 6: xiang huan qu gong yue can fu\n序列 7: xiang hou qu geng yue can fu\n序列 8: xiang hui qu gong yue can ma\n序列 9: xiang hui qu geng yue can bu\n序列 10: xiang huan qu gong yue can ma\nTop K 汉字序列 (按联合概率排序):\n序列 1: 下午去公园散步\n序列 2: 箱回去公园散步\n序列 3: 鞋回去公园散步\n序列 4: 者回去公园散步\n序列 5: 箱午去公园散步\n序列 6: 校回去公园散步\n序列 7: 雪回去公园散步\n序列 8: 决定去公园散步\n序列 9: 鞋午去公园散步\n序列 10: 者午去公园散步",
+    "output": "下午去公园散步"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: can ri zeng lin zhe bei qiao\n序列 2: can ri sou lin zhe bei qiao\n序列 3: can ri zeng lin zhe bei cai\n序列 4: ji ri zeng lin zhe bei qiao\n序列 5: can ri sou lin zhe bei cai\n序列 6: ji ri sou lin zhe bei qiao\n序列 7: ca ri zeng lin zhe bei qiao\n序列 8: ca ri sou lin zhe bei qiao\n序列 9: can rou zeng lin zhe bei qiao\n序列 10: na ri zeng lin zhe bei qiao\nTop K 汉字序列 (按联合概率排序):\n序列 1: 窜入森林真危险\n序列 2: 餐入森林真危险\n序列 3: 贼入森林真危险\n序列 4: 窜入森林真开心\n序列 5: 造入森林真危险\n序列 6: 窜入森林着的哈\n序列 7: 钮入森林真危险\n序列 8: 缠入森林真危险\n序列 9: 泪入森林真危险\n序列 10: 只入森林真危险",
+    "output": "窜入森林真危险"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: zhuan jin liang ji fen he guo le\n序列 2: zhuan jin liang ji fen he guang le\n序列 3: lei jin liang ji fen he guo le\n序列 4: lei jin liang ji fen he guang le\n序列 5: zhuan jin liang ji bei he guo le\n序列 6: zhuan jin liang ji bei he guang le\n序列 7: zhuan teng liang ji fen he guo le\n序列 8: zhuan teng liang ji fen he guang le\n序列 9: lei jin liang ji bei he guo le\n序列 10: lei jin liang ji bei he guang le\nTop K 汉字序列 (按联合概率排序):\n序列 1: 软饮料基本喝光了\n序列 2: 泪饮料基本喝光了\n序列 3: 者饮料基本喝光了\n序列 4: 怨饮料基本喝光了\n序列 5: 以饮料基本喝光了\n序列 6: 严禁料基本喝光了\n序列 7: 软饮料基本喝光了\n序列 8: 队饮料基本喝光了\n序列 9: 为饮料基本喝光了\n序列 10: 园林料基本喝光了",
+    "output": "软饮料基本喝光了"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: ta sa bian le zhen ge xun cang\n序列 2: ta sa pan le zhen ge xun cang\n序列 3: ta sa bian le zhen ge zhuan cang\n序列 4: ta sa gan le zhen ge xun cang\n序列 5: ta sa bian le zheng ge xun cang\n序列 6: ta sa pan le zhen ge zhuan cang\n序列 7: ta sa bian le zhen ge xun zhi\n序列 8: ta sa bian le zhen ge xun zhou\n序列 9: ta sa gan le zhen ge zhuan cang\n序列 10: ta sa pan le zheng ge xun cang\nTop K 汉字序列 (按联合概率排序):\n序列 1: 他搜遍了整个船舱\n序列 2: 他搜遍了整个船舱\n序列 3: 并搜遍了整个船舱\n序列 4: 他搜遍了整个船舱\n序列 5: 擦伤遍了整个船舱\n序列 6: 头搜遍了整个船舱\n序列 7: 他搜遍了整个船舱\n序列 8: 他搜遍了整个船舱\n序列 9: 险搜遍了整个船舱\n序列 10: 落搜遍了整个船舱",
+    "output": "他搜遍了整个船舱"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: yan jin xun che le le yi\n序列 2: yan jin xun che you le yi\n序列 3: yan jin xun che le le duo\n序列 4: yan jin xun che you le duo\n序列 5: yan jin xun che le le ta\n序列 6: yan jin xun che le le peng\n序列 7: yan jin xun che le lai yi\n序列 8: yan jin xun che le le chuan\n序列 9: yan jin xun che you le ta\n序列 10: yan jin xun che you le peng\nTop K 汉字序列 (按联合概率排序):\n序列 1: 严禁随处丢垃圾\n序列 2: 研禁随处丢垃圾\n序列 3: 严禁随处丢垃圾\n序列 4: 严禁随处丢垃圾\n序列 5: 严禁随处有许多\n序列 6: 严禁随处友回去\n序列 7: 严禁算处丢垃圾\n序列 8: 严禁送朋友回去\n序列 9: 严禁算车丢垃圾\n序列 10: 严禁随处照看咯",
+    "output": "严禁随处丢垃圾"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: zhe fen zuo zi lai zi na gong dao pang\n序列 2: zhe fen zuo zi lai zi na gong dao pai\n序列 3: zhe fen zuo zi lai zi na gong dao pei\n序列 4: zhe fen zhe zi lai zi na gong dao pang\n序列 5: zhe fen zhe zi lai zi na gong dao pai\n序列 6: zhe fen zuo zi lai zi na gao dao pang\n序列 7: zhe fen zhe zi lai zi na gong dao pei\n序列 8: zhe fen zuo zi lai zi na gao dao pai\n序列 9: zhe fen zuo zi lai zi na gao dao pei\n序列 10: zhe fen zhe zi lai zi na gao dao pang\nTop K 汉字序列 (按联合概率排序):\n序列 1: 这本册子来自哪个党派\n序列 2: 者本册子来自哪个党派\n序列 3: 这匹册子来自哪个党派\n序列 4: 这本册子来自哪个党派\n序列 5: 这本册子来自哪个党派\n序列 6: 这本册子来自哪个党派\n序列 7: 这种册子来自哪个党派\n序列 8: 者尊者子来自哪个党派\n序列 9: 者非册子来自哪个党派\n序列 10: 者论册子来自哪个党派",
+    "output": "这本册子来自哪个党派"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: yun dian you lu gei jing lian\n序列 2: yun dian you lu kua jing lian\n序列 3: yun dian you lu gei qing lian\n序列 4: yun dian you lu kua qing lian\n序列 5: yun dian you lu gei jing dui\n序列 6: yun dian you lu gao jing lian\n序列 7: yun dian you lu kua jing dui\n序列 8: yun dian you lu gei qing dui\n序列 9: yun dian you lu gao qing lian\n序列 10: yun dian you lu kua qing dui\nTop K 汉字序列 (按联合概率排序):\n序列 1: 云南有旅游景点\n序列 2: 云南有旅游景点\n序列 3: 命店有旅游景点\n序列 4: 酒店有旅游景点\n序列 5: 命店有旅游景点\n序列 6: 酒店有旅游景点\n序列 7: 束店有旅游景点\n序列 8: 输店有旅游景点\n序列 9: 恕店有旅游景点\n序列 10: 书店有旅游景点",
+    "output": "云南有旅游景点"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: bu shu xie zi lian gao chi\n序列 2: bu shu xie zi lian gao qi\n序列 3: bu shu xie zi lian gao qin\n序列 4: bu shu xie zi lian gao ji\n序列 5: bu shu xie zi lian gong chi\n序列 6: bu shu xie zi lian gong qi\n序列 7: bu shu xie zi lian gong qin\n序列 8: bu shi xie zi lian gao chi\n序列 9: bu shu xie zi lian gong ji\n序列 10: bu shi xie zi lian gao qi\nTop K 汉字序列 (按联合概率排序):\n序列 1: 步书写字练钢琴\n序列 2: 读书写字练钢琴\n序列 3: 以书写字练钢琴\n序列 4: 于书写字练钢琴\n序列 5: 雨书写字练钢琴\n序列 6: 宇书写字练钢琴\n序列 7: 雾书写字练钢琴\n序列 8: 物书写字练钢琴\n序列 9: 备书写字练钢琴\n序列 10: 戏书写字练钢琴",
+    "output": "读书写字练钢琴"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: wai qu yi ren de lu mou\n序列 2: wai qu yi ren de yun mou\n序列 3: bu qu yi ren de lu mou\n序列 4: bu qu yi ren de yun mou\n序列 5: wai qu yin ren de lu mou\n序列 6: wai qu yi ren de lu fa\n序列 7: wai qu li ren de lu mou\n序列 8: wai qu yin ren de yun mou\n序列 9: bu qu yin ren de lu mou\n序列 10: wai qu yi ren de yun fa\nTop K 汉字序列 (按联合概率排序):\n序列 1: 剖析敌人的阴谋\n序列 2: 步析敌人的阴谋\n序列 3: 美析敌人的阴谋\n序列 4: 妹析敌人的阴谋\n序列 5: 剖析敌人的阴谋\n序列 6: 否析敌人的阴谋\n序列 7: 况析敌人的阴谋\n序列 8: 腿析敌人的阴谋\n序列 9: 非析敌人的阴谋\n序列 10: 头析敌人的阴谋",
+    "output": "剖析敌人的阴谋"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: ta ma mei ba cha zi dian\n序列 2: te ma mei ba cha zi dian\n序列 3: ta ma mei de cha zi dian\n序列 4: ta ma mei ba chuan zi dian\n序列 5: te ma mei de cha zi dian\n序列 6: ta ma mei dao cha zi dian\n序列 7: te ma mei ba chuan zi dian\n序列 8: te ma mei dao cha zi dian\n序列 9: ta ma mei de chuan zi dian\n序列 10: te ma mei de chuan zi dian\nTop K 汉字序列 (按联合概率排序):\n序列 1: 他慢慢地查字典\n序列 2: 肉拌面包查字典\n序列 3: 房拌面包查字典\n序列 4: 部分功课查字典\n序列 5: 何拌面包查字典\n序列 6: 以拌面包查字典\n序列 7: 基本慢地查字典\n序列 8: 后天空调查字典\n序列 9: 慢慢慢地查字典\n序列 10: 疼拌面包查字典",
+    "output": "他慢慢地查字典"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: sa ke li zhen huan de lu hua zai jue li\n序列 2: sa ke li shun huan de lu hua zai jue li\n序列 3: sa ke li zhun huan de lu hua zai jue li\n序列 4: sa ke li zhen huan de lu hua zai gei li\n序列 5: sa ke li shun huan de lu hua zai gei li\n序列 6: sa ke li zhun huan de lu hua zai gei li\n序列 7: sa ke you zhen huan de lu hua zai jue li\n序列 8: sa ke you shun huan de lu hua zai jue li\n序列 9: sa ke you zhun huan de lu hua zai jue li\n序列 10: ta ke li zhen huan de lu hua zai jue li\nTop K 汉字序列 (按联合概率排序):\n序列 1: 巧克力润滑地融化在嘴里\n序列 2: 巧克力润滑地融化在嘴里\n序列 3: 巧克力润滑地融化在这里\n序列 4: 者克力润滑地融化在嘴里\n序列 5: 校克力润滑地融化在嘴里\n序列 6: 箱克力润滑地融化在嘴里\n序列 7: 者克力润滑地融化在嘴里\n序列 8: 校克力润滑地融化在嘴里\n序列 9: 造克力润滑地融化在嘴里\n序列 10: 充克力润滑地融化在嘴里",
+    "output": "巧克力润滑地融化在嘴里"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: ji yi yi hai te he zang qiang\n序列 2: ji yi yi hai te he zang jiao\n序列 3: ji ge yi hai te he zang qiang\n序列 4: ji yi yi hai te kou zang qiang\n序列 5: ji yi yi hai de he zang qiang\n序列 6: ji ge yi hai te he zang jiao\n序列 7: ji yi yi hai te kou zang jiao\n序列 8: ji yi yi hai de he zang jiao\n序列 9: ji ge yi hai te kou zang qiang\n序列 10: ji ge yi hai de he zang qiang\nTop K 汉字序列 (按联合概率排序):\n序列 1: 注意见傲地站起床\n序列 2: 注意见好他嚷嚷嚷\n序列 3: 注意见傲地扛着枪\n序列 4: 精美歌好那盘菜上\n序列 5: 注意见滑地站起床\n序列 6: 计划去晒太可惜了\n序列 7: 注意见傲地站着枪\n序列 8: 注意见好那盘菜上\n序列 9: 计划去晒太可惜了\n序列 10: 注意见好他忙着枪",
+    "output": "军人骄傲地扛着枪"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: zao shi ji qu su fou you\n序列 2: zao she ji qu su fou you\n序列 3: zao sha ji qu su fou you\n序列 4: zao shi ji qu su shua you\n序列 5: zao she ji qu su shua you\n序列 6: zao shai ji qu su fou you\n序列 7: zao sha ji qu su shua you\n序列 8: zao shi ji qu su zhua you\n序列 9: zao she ji qu su zhua you\n序列 10: zao sha ji qu su zhua you\nTop K 汉字序列 (按联合概率排序):\n序列 1: 早上记住先刷牙\n序列 2: 造上记住先刷牙\n序列 3: 早上记住先刷牙\n序列 4: 早上记住先刷洗\n序列 5: 造实记住先刷牙\n序列 6: 造师记住先刷牙\n序列 7: 造视记住先刷牙\n序列 8: 造师记住先刷牙\n序列 9: 造适记住先刷牙\n序列 10: 早上记住先刷友",
+    "output": "早上记住先刷牙"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: di qi jie chang mei jue guo\n序列 2: di qi jie chang mei xie guo\n序列 3: di qi jie chang mei shua guo\n序列 4: di qi jing chang mei jue guo\n序列 5: di qi ying chang mei jue guo\n序列 6: jian qi jie chang mei jue guo\n序列 7: ji qi jie chang mei jue guo\n序列 8: di qi jie chang mei sui guo\n序列 9: di qi jing chang mei xie guo\n序列 10: di qi ying chang mei xie guo\nTop K 汉字序列 (按联合概率排序):\n序列 1: 近期经常买水果\n序列 2: 间期经常买水果\n序列 3: 见期经常买水果\n序列 4: 自期经常买水果\n序列 5: 禁期经常买水果\n序列 6: 近期经常买水果\n序列 7: 待期经常买水果\n序列 8: 以期经常买水果\n序列 9: 造期经常买水果\n序列 10: 为期经常买水果",
+    "output": "近期经常买水果"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: wo qing yao gan xie shen ma\n序列 2: wo qing yao gan xie shen me\n序列 3: wo qing yao gan xie shen meng\n序列 4: wo ting yao gan xie shen ma\n序列 5: wo ting yao gan xie shen me\n序列 6: wo ping yao gan xie shen ma\n序列 7: wo qing you gan xie shen ma\n序列 8: wo piao yao gan xie shen ma\n序列 9: wo ping yao gan xie shen me\n序列 10: wo qing you gan xie shen me\nTop K 汉字序列 (按联合概率排序):\n序列 1: 目前要干些什么\n序列 2: 我不要干些什么\n序列 3: 步前要干些什么\n序列 4: 布料要干些什么\n序列 5: 备前要干些什么\n序列 6: 美前要干些什么\n序列 7: 妹前要干些什么\n序列 8: 命前要干些什么\n序列 9: 步需要干些什么\n序列 10: 非前要干些什么",
+    "output": "目前要干些什么"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: ta lun hen kuai ji fu ni\n序列 2: ta lun hen kuai ji shu ni\n序列 3: ta lun hen kuai ji fu lu\n序列 4: ta lun hen kuai ji shu lu\n序列 5: ta lun hen kuai ze fu ni\n序列 6: ta lun hen kuai ze shu ni\n序列 7: ta lun hen kuai ze fu lu\n序列 8: ta lun hen kuai ze shu lu\n序列 9: ta lun hen kuai ji feng ni\n序列 10: ta lun hen kuai ji feng lu\nTop K 汉字序列 (按联合概率排序):\n序列 1: 讨论很快结束了\n序列 2: 讨论很快结束里\n序列 3: 讨论很快结束出\n序列 4: 讨论很快结束哟\n序列 5: 架论很快结束了\n序列 6: 造论很快结束了\n序列 7: 讨论很快结束里\n序列 8: 讨论很快结束吗\n序列 9: 讨论很快结束痛\n序列 10: 讨论很快结束烤",
+    "output": "讨论很快结束了"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: zhe zhi ge yi jue keng hao ding\n序列 2: zhe zhi ge ji jue keng hao ding\n序列 3: zhe zhi gong yi jue keng hao ding\n序列 4: zhe zhi ge yi xue keng hao ding\n序列 5: zhe zhi ge yi fang keng hao ding\n序列 6: zhe zhi gong ji jue keng hao ding\n序列 7: zhe zhi ge ji xue keng hao ding\n序列 8: zhe zhi ge ji fang keng hao ding\n序列 9: zhe zhi ge yi jue gen hao ding\n序列 10: zhe zhi ge ni jue keng hao ding\nTop K 汉字序列 (按联合概率排序):\n序列 1: 这支歌的确更好听\n序列 2: 这支歌的确更好听\n序列 3: 者支歌的确更好听\n序列 4: 者支歌的确更好听\n序列 5: 这支歌的眼睛好听\n序列 6: 筝支歌的确更好听\n序列 7: 只支歌的确更好听\n序列 8: 者只歌的确更好听\n序列 9: 这支歌的确更漂亮\n序列 10: 造支歌的确更好听",
+    "output": "这支歌的确更好听"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: duo shun bu gan zhao ge jin nang\n序列 2: duo shun bu gan zhao ge jin lai\n序列 3: duo shun bu gan zhao ge jin zang\n序列 4: duo shun bu gan zhao ge jin nen\n序列 5: duo shun bu gan zhao ge zhen nang\n序列 6: duo shun bu gan zhao ge jin dan\n序列 7: duo shun bu gan zhao ge jin nao\n序列 8: duo shun bu gan zhao ge zao nang\n序列 9: duo shun bu gan zhao ge zen nang\n序列 10: duo shun bu gan zhao ge jin dong\nTop K 汉字序列 (按联合概率排序):\n序列 1: 妥善保管这个锦囊\n序列 2: 落善保管这个锦囊\n序列 3: 迫善保管这个锦囊\n序列 4: 坡善保管这个锦囊\n序列 5: 驼善保管这个锦囊\n序列 6: 步善保管这个锦囊\n序列 7: 妥善步管这个锦囊\n序列 8: 碍善保管这个锦囊\n序列 9: 妥善保管这个锦囊\n序列 10: 妥善保管这个锦囊",
+    "output": "妥善保管这个锦囊"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: tuan ang you qiong lve nin se\n序列 2: tuan hun you qiong lve nin se\n序列 3: tuan heng you qiong lve nin se\n序列 4: huai ang you qiong lve nin se\n序列 5: cao ang you qiong lve nin se\n序列 6: huai hun you qiong lve nin se\n序列 7: huai heng you qiong lve nin se\n序列 8: cao hun you qiong lve nin se\n序列 9: cao heng you qiong lve nin se\n序列 10: sai ang you qiong lve nin se\nTop K 汉字序列 (按联合概率排序):\n序列 1: 彩虹有七种颜色\n序列 2: 偶尔有七种颜色\n序列 3: 餐虹有七种颜色\n序列 4: 餐尔有七种颜色\n序列 5: 落虹有七种颜色\n序列 6: 缠虹有七种颜色\n序列 7: 善虹有七种颜色\n序列 8: 丛里有七种颜色\n序列 9: 前面有七种颜色\n序列 10: 算虹有七种颜色",
+    "output": "彩虹有七种颜色"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: neng run zai lin hen ang bei\n序列 2: neng lin zai lin hen ang bei\n序列 3: neng run zai ling hen ang bei\n序列 4: neng run zai leng hen ang bei\n序列 5: neng lve zai lin hen ang bei\n序列 6: neng lin zai ling hen ang bei\n序列 7: neng lin zai leng hen ang bei\n序列 8: neng run zai ye hen ang bei\n序列 9: neng run cong lin hen ang bei\n序列 10: deng run zai lin hen ang bei\nTop K 汉字序列 (按联合概率排序):\n序列 1: 嫩绿窗帘很昂贵\n序列 2: 树林中有很昂贵\n序列 3: 灯光讨论很昂贵\n序列 4: 树林讨论很昂贵\n序列 5: 等车讨论很昂贵\n序列 6: 灯光窗帘很昂贵\n序列 7: 关掉窗帘很昂贵\n序列 8: 树林窗帘很昂贵\n序列 9: 森林讨论很昂贵\n序列 10: 等车窗帘很昂贵",
+    "output": "嫩绿窗帘很昂贵"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: wo lun long qu guan ren\n序列 2: wo lun long qu guan zhen\n序列 3: wo lun long qu hua ren\n序列 4: wo lun long qu huo ren\n序列 5: wo lun long qu kuan ren\n序列 6: wo lun long qu huan ren\n序列 7: wo lun long qu hua zhen\n序列 8: wo lun long qu huai ren\n序列 9: wo lun long qu huo zhen\n序列 10: wo lun long qu kuan zhen\nTop K 汉字序列 (按联合概率排序):\n序列 1: 不能饶恕坏人\n序列 2: 我肩膀恕坏人\n序列 3: 步能饶恕坏人\n序列 4: 我计划恕坏人\n序列 5: 我们亮恕坏人\n序列 6: 我们量恕坏人\n序列 7: 谬论亮恕坏人\n序列 8: 谬论量恕坏人\n序列 9: 我们饶恕坏人\n序列 10: 步论量恕坏人",
+    "output": "不能饶恕坏人"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: huai chuan fo he yuan mai tun jian zhou\n序列 2: huai chuan fu he yuan mai tun jian zhou\n序列 3: huai chuan fo he yun mai tun jian zhou\n序列 4: huai chuan fu he yun mai tun jian zhou\n序列 5: huai chuan fo he yuan mai tan jian zhou\n序列 6: wai chuan fo he yuan mai tun jian zhou\n序列 7: huai chuan fu he yuan mai tan jian zhou\n序列 8: wai chuan fu he yuan mai tun jian zhou\n序列 9: huai chuan fo he yun mai tan jian zhou\n序列 10: wai chuan fo he yun mai tun jian zhou\nTop K 汉字序列 (按联合概率排序):\n序列 1: 快抓服务员买单结账\n序列 2: 快抓服务员买单结账\n序列 3: 划抓服务员买单结账\n序列 4: 化抓服务员买单结账\n序列 5: 滑抓服务员买单结账\n序列 6: 话抓服务员买单结账\n序列 7: 滑抓服务员买单结账\n序列 8: 话抓服务员买单结账\n序列 9: 化抓服务员买单结账\n序列 10: 划抓服务员买单结账",
+    "output": "快抓服务员买单结账"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: wo ben hui ke bei zai hao\n序列 2: wo ben hui ke mei zai hao\n序列 3: wo wen hui ke bei zai hao\n序列 4: wo ben hui ke bei zuo hao\n序列 5: wo ben gong ke bei zai hao\n序列 6: wo wen hui ke mei zai hao\n序列 7: wo ben hui ke mei zuo hao\n序列 8: wo ben gong ke mei zai hao\n序列 9: wo wen hui ke bei zuo hao\n序列 10: wo wen gong ke bei zai hao\nTop K 汉字序列 (按联合概率排序):\n序列 1: 部分功课没做好\n序列 2: 我们功课没做好\n序列 3: 基本功课没做好\n序列 4: 这本功课没做好\n序列 5: 莫为功课没做好\n序列 6: 步分功课没做好\n序列 7: 部分功课没做好\n序列 8: 我们会课没做好\n序列 9: 步本功课没做好\n序列 10: 者分功课没做好",
+    "output": "部分功课没做好"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: yi die zai jue nin ding yi zhao jian mian\n序列 2: yi die zai jue lin ding yi zhao jian mian\n序列 3: yi die zai juan nin ding yi zhao jian mian\n序列 4: yi die zai juan lin ding yi zhao jian mian\n序列 5: yi die zai jue nin ding yi zhao ding mian\n序列 6: yi die zai jue lin ding yi zhao ding mian\n序列 7: yi die zai juan nin ding yi zhao ding mian\n序列 8: yi die zai juan lin ding yi zhao ding mian\n序列 9: jian die zai jue nin ding yi zhao jian mian\n序列 10: jian die zai jue lin ding yi zhao jian mian\nTop K 汉字序列 (按联合概率排序):\n序列 1: 萄酒店决定订一张机票\n序列 2: 萄酒店决定订一张机票\n序列 3: 以总算决定订一张机票\n序列 4: 肩膀算决定订一张机票\n序列 5: 间总算决定订一张机票\n序列 6: 见总算决定订一张机票\n序列 7: 他总算决定订一张机票\n序列 8: 以总算决定订一张机票\n序列 9: 石头算决定订一张机票\n序列 10: 药总算决定订一张机票",
+    "output": "他总算决定订一张机票"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: pin hao jiu die you hen duo bin kai\n序列 2: bing hao jiu die you hen duo bin kai\n序列 3: pin ai jiu die you hen duo bin kai\n序列 4: bing ai jiu die you hen duo bin kai\n序列 5: bin hao jiu die you hen duo bin kai\n序列 6: pin hao jiu die you hen zuo bin kai\n序列 7: bing hao jiu die you hen zuo bin kai\n序列 8: pin hao jiu die you hen duo bin kong\n序列 9: pin hai jiu die you hen duo bin kai\n序列 10: bing hao jiu die you hen duo bin kong\nTop K 汉字序列 (按联合概率排序):\n序列 1: 滨海酒店有很多宾客\n序列 2: 葡萄酒店有很多宾客\n序列 3: 滨海酒店有很多宾客\n序列 4: 滨海酒店有很多宾客\n序列 5: 峰海酒店有很多宾客\n序列 6: 本海酒店有很多宾客\n序列 7: 仆海酒店有很多宾客\n序列 8: 评海酒店有很多宾客\n序列 9: 瓶海酒店有很多宾客\n序列 10: 平海酒店有很多宾客",
+    "output": "滨海酒店有很多宾客"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: bing jing cheng pei chun shao zhang mo zai beng tou sheng\n序列 2: bing jing cheng pei shun shao zhang mo zai beng tou sheng\n序列 3: bing jing cheng pei chun shao zhang me zai beng tou sheng\n序列 4: bing jing cheng pei shun shao zhang me zai beng tou sheng\n序列 5: bing jing cheng pei ren shao zhang mo zai beng tou sheng\n序列 6: ming jing cheng pei chun shao zhang mo zai beng tou sheng\n序列 7: bing jing cheng pei ren shao zhang me zai beng tou sheng\n序列 8: ming jing cheng pei shun shao zhang mo zai beng tou sheng\n序列 9: ming jing cheng pei chun shao zhang me zai beng tou sheng\n序列 10: ming jing cheng pei shun shao zhang me zai beng tou sheng\nTop K 汉字序列 (按联合概率排序):\n序列 1: 民警晨跑顺手抓毛贼并搜身\n序列 2: 命警晨跑顺手抓毛贼并搜身\n序列 3: 本警晨跑顺手抓毛贼并搜身\n序列 4: 疼警晨跑顺手抓毛贼并搜身\n序列 5: 林警晨跑顺手抓毛贼并搜身\n序列 6: 论警晨跑顺手抓毛贼并搜身\n序列 7: 民警晨跑顺手抓毛贼并搜身\n序列 8: 评警晨跑顺手抓毛贼并搜身\n序列 9: 瓶警晨跑顺手抓毛贼并搜身\n序列 10: 平警晨跑顺手抓毛贼并搜身",
+    "output": "民警晨跑顺手抓毛贼并搜身"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: na jue zuo wai mo zhen zhe zeng chu\n序列 2: na yuan zuo wai mo zhen zhe zeng chu\n序列 3: na jue zuo wai mo zhen zhao zeng chu\n序列 4: na jue zai wai mo zhen zhe zeng chu\n序列 5: na yuan zuo wai mo zhen zhao zeng chu\n序列 6: na yuan zai wai mo zhen zhe zeng chu\n序列 7: mei jue zuo wai mo zhen zhe zeng chu\n序列 8: na jue zai wai mo zhen zhao zeng chu\n序列 9: bei jue zuo wai mo zhen zhe zeng chu\n序列 10: mei yuan zuo wai mo zhen zhe zeng chu\nTop K 汉字序列 (按联合概率排序):\n序列 1: 妹窜在外面站着等车\n序列 2: 美窜在外面站着等车\n序列 3: 备窜在外面站着等车\n序列 4: 为窜在外面站着等车\n序列 5: 融化在外面站着等车\n序列 6: 那片在外面站着等车\n序列 7: 命窜在外面站着等车\n序列 8: 同学在外面站着等车\n序列 9: 妹住在外面站着等车\n序列 10: 美住在外面站着等车",
+    "output": "同学在外面站着等车"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: ling bian tang hen rao yi ma\n序列 2: neng bian tang hen rao yi ma\n序列 3: ling pian tang hen rao yi ma\n序列 4: neng pian tang hen rao yi ma\n序列 5: lin bian tang hen rao yi ma\n序列 6: ling bian tang hen ruo yi ma\n序列 7: neng bian tang hen ruo yi ma\n序列 8: ling bian wa hen rao yi ma\n序列 9: neng bian wa hen rao yi ma\n序列 10: lin pian tang hen rao yi ma\nTop K 汉字序列 (按联合概率排序):\n序列 1: 搜遍了很容易吗\n序列 2: 搜遍假很容易吗\n序列 3: 玩电脑很容易吗\n序列 4: 林遍了很容易吗\n序列 5: 为遍了很容易吗\n序列 6: 路边假很容易吗\n序列 7: 领队假很容易吗\n序列 8: 搜遍论很容易吗\n序列 9: 用电脑很容易吗\n序列 10: 翁遍了很容易吗",
+    "output": "用电脑很容易吗"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: yun liang wo ying shi zai ai ei\n序列 2: yun liang wo ning shi zai ai ei\n序列 3: yun ling wo ying shi zai ai ei\n序列 4: yun ling wo ning shi zai ai ei\n序列 5: yun liang wo bing shi zai ai ei\n序列 6: yun liang wo ying shi zai ei ei\n序列 7: yun nang wo ying shi zai ai ei\n序列 8: yun liang wo ning shi zai ei ei\n序列 9: yun liang wo ling shi zai ai ei\n序列 10: yun liang wo ying shi zai o ei\nTop K 汉字序列 (按联合概率排序):\n序列 1: 贫穷不应是阻碍诶\n序列 2: 绿化不应是阻碍诶\n序列 3: 音穷不应是阻碍诶\n序列 4: 音化不应是阻碍诶\n序列 5: 云南不应是阻碍诶\n序列 6: 音此不应是阻碍诶\n序列 7: 从此不应是阻碍诶\n序列 8: 音校不应是阻碍诶\n序列 9: 云南我应是阻碍诶\n序列 10: 于穷不应是阻碍诶",
+    "output": "贫穷不应是阻碍诶"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: yi ou shen bei shi guo\n序列 2: yi ou jian bei shi guo\n序列 3: yi ou shen bei jin guo\n序列 4: yi ou shen bei zhi guo\n序列 5: yi ou jian bei jin guo\n序列 6: yi ou shen bei shi huo\n序列 7: jian ou shen bei shi guo\n序列 8: yi ou jian bei zhi guo\n序列 9: yi ou jian bei shi huo\n序列 10: yi ou shen bei jin huo\nTop K 汉字序列 (按联合概率排序):\n序列 1: 讨论准备出国\n序列 2: 骄傲准备出国\n序列 3: 正在准备出国\n序列 4: 以在准备出国\n序列 5: 间在准备出国\n序列 6: 见在准备出国\n序列 7: 短裙准备出国\n序列 8: 药在准备出国\n序列 9: 石头准备出国\n序列 10: 饺在准备出国",
+    "output": "表妹准备出国"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: chuan yue du ling nv nao kui\n序列 2: chun yue du ling nv nao kui\n序列 3: chuan yue du lin nv nao kui\n序列 4: chun yue du lin nv nao kui\n序列 5: chuan mian du ling nv nao kui\n序列 6: chun mian du ling nv nao kui\n序列 7: chuan yue du lian nv nao kui\n序列 8: chuan mian du lin nv nao kui\n序列 9: chun yue du lian nv nao kui\n序列 10: chuan yue du liang nv nao kui\nTop K 汉字序列 (按联合概率排序):\n序列 1: 纯棉布料比较贵\n序列 2: 纯棉布料女绰约\n序列 3: 纯棉布料女泽国\n序列 4: 纯棉布料绿泽国\n序列 5: 纯棉布料你吃亏\n序列 6: 纯棉布料比较贵\n序列 7: 纯棉布料润泽国\n序列 8: 纯棉布料女丢了\n序列 9: 纯棉布料比较贵\n序列 10: 纯棉布料比较贵",
+    "output": "纯棉布料比较贵"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: zan lou zao ze zan de de ya ji\n序列 2: zan lou zao ze zan de de biao ji\n序列 3: can lou zao ze zan de de ya ji\n序列 4: zan lou zao ze zan de de niao ji\n序列 5: can lou zao ze zan de de biao ji\n序列 6: zen lou zao ze zan de de ya ji\n序列 7: can lou zao ze zan de de niao ji\n序列 8: zan lou zao ze zan de de gua ji\n序列 9: zan lou can ze zan de de ya ji\n序列 10: zei lou zao ze zan de de ya ji\nTop K 汉字序列 (按联合概率排序):\n序列 1: 咱俩暂且赞他的妙计\n序列 2: 咱俩暂且赞他的妙计\n序列 3: 餐俩暂且赞他的妙计\n序列 4: 贼俩暂且赞他的妙计\n序列 5: 咱俩暂且赞他的妙计\n序列 6: 禁俩暂且赞他的妙计\n序列 7: 针俩暂且赞他的妙计\n序列 8: 咱俩暂且赞他的眼睛\n序列 9: 造俩暂且赞他的妙计\n序列 10: 烦俩暂且赞他的妙计",
+    "output": "咱俩暂且赞他的妙计"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: zei you dian tou dian shui ting zhen me dang\n序列 2: zei you dian tou dian shui ting zhen me yang\n序列 3: zei you dian tou dian shui ting zhen me dao\n序列 4: zei you dian tou dian shui ting zhen me you\n序列 5: zei you dian tou yan shui ting zhen me dang\n序列 6: zei you le tou dian shui ting zhen me dang\n序列 7: zei na dian tou dian shui ting zhen me dang\n序列 8: zei you dian tou dian shuai ting zhen me dang\n序列 9: zei you dian tou yan shui ting zhen me yang\n序列 10: zei you dian tou dian chuai ting zhen me dang\nTop K 汉字序列 (按联合概率排序):\n序列 1: 柴教练投篮水平怎么样\n序列 2: 贼教练投篮水平怎么样\n序列 3: 贼酒店投篮水平怎么样\n序列 4: 贼友练投篮水平怎么样\n序列 5: 贼友练投篮水平怎么样\n序列 6: 海酒店投篮水平怎么样\n序列 7: 萄酒店投篮水平怎么样\n序列 8: 盟友练投篮水平怎么样\n序列 9: 贼友店投篮水平怎么样\n序列 10: 贼友店投篮水平怎么样",
+    "output": "柴教练投篮水平怎么样"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: ba ge xiang qun leng zhai hao\n序列 2: ba ge xiang qun lian zhai hao\n序列 3: wa ge xiang qun leng zhai hao\n序列 4: wai ge xiang qun leng zhai hao\n序列 5: wa ge xiang qun lian zhai hao\n序列 6: ba ge xiang jun leng zhai hao\n序列 7: wai ge xiang qun lian zhai hao\n序列 8: ba ge xiang jun lian zhai hao\n序列 9: wa ge xiang jun leng zhai hao\n序列 10: wai ge xiang jun leng zhai hao\nTop K 汉字序列 (按联合概率排序):\n序列 1: 表哥想训练长跑\n序列 2: 利哥想训练长跑\n序列 3: 调哥想训练长跑\n序列 4: 掉哥想训练长跑\n序列 5: 尬哥想训练长跑\n序列 6: 房哥想训练长跑\n序列 7: 炮哥想训练长跑\n序列 8: 渡哥想训练长跑\n序列 9: 包哥想训练长跑\n序列 10: 寺哥想训练长跑",
+    "output": "表哥想训练长跑"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: qing duo ye lun gan fang dang za wu\n序列 2: qing duo ye lun gan fang dang za pu\n序列 3: qing jian ye lun gan fang dang za wu\n序列 4: qing duo ye lun gan fang jiang za wu\n序列 5: qing duo ye lun gan fang dang za ma\n序列 6: qing jian ye lun gan fang dang za pu\n序列 7: qing duo ye lun gan fang jiang za pu\n序列 8: qing jian ye lun gan fang jiang za wu\n序列 9: qing jian ye lun gan fang dang za ma\n序列 10: qing te ye lun gan fang dang za wu\nTop K 汉字序列 (按联合概率排序):\n序列 1: 请挪开栏杆旁的杂物\n序列 2: 请挪开栏杆旁的杂物\n序列 3: 请挪开栏杆旁的杂物\n序列 4: 请挪开栏杆旁的杂物\n序列 5: 别挪开栏杆旁的杂物\n序列 6: 别挪开栏杆旁的杂物\n序列 7: 请挪开栏杆旁的泽国\n序列 8: 贼挪开栏杆旁的杂物\n序列 9: 错作业栏杆旁的杂物\n序列 10: 请挪开栏杆旁的阴谋",
+    "output": "请挪开栏杆旁的杂物"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: wo neng yue yi sou yi yi hui can\n序列 2: wo ning yue yi sou yi yi hui can\n序列 3: wo neng yue yi cuo yi yi hui can\n序列 4: wo ning yue yi cuo yi yi hui can\n序列 5: wo neng yue yi sou yi yi hui jue\n序列 6: wo ning yue yi sou yi yi hui jue\n序列 7: wo neng yue yi sou jian yi hui can\n序列 8: wo ning yue yi sou jian yi hui can\n序列 9: wo neng yue yi sou yi yi huai can\n序列 10: wo ning yue yi sou yi yi huai can\nTop K 汉字序列 (按联合概率排序):\n序列 1: 我仍愿意送朋友回去\n序列 2: 我仍愿意送朋友回去\n序列 3: 了宁愿意送朋友回去\n序列 4: 他宁愿意送朋友回去\n序列 5: 果宁愿意送朋友回去\n序列 6: 国宁愿意送朋友回去\n序列 7: 步宁愿意送朋友回去\n序列 8: 落宁愿意送朋友回去\n序列 9: 者宁愿意送朋友回去\n序列 10: 筝宁愿意送朋友回去",
+    "output": "我仍愿意送朋友回去"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: rao lve lve me zhen jia rang jue\n序列 2: rao lve lve me zhen jia jia jue\n序列 3: rao lve lve me zhen dia rang jue\n序列 4: rao lve lve me zhen you rang jue\n序列 5: rao lve lve me zhen liang rang jue\n序列 6: rao lve lve me zhen dia jia jue\n序列 7: rao lve lve me zhen jia rang yong\n序列 8: rao lve lve me zhen jia zhang jue\n序列 9: rao lve lve me zhen you jia jue\n序列 10: rao lve lve me zhen da rang jue\nTop K 汉字序列 (按联合概率排序):\n序列 1: 这匹骆驼真强壮哟\n序列 2: 饶恕骆驼真强壮哟\n序列 3: 绕开脸头真强壮哟\n序列 4: 饶恕略头真强壮哟\n序列 5: 饶恕略头真强壮哟\n序列 6: 绕开脸翁扔掉柴火\n序列 7: 绕开脸驼真强壮哟\n序列 8: 饶恕略翁扔掉柴火\n序列 9: 饶恕略翁扔掉柴火\n序列 10: 饶恕略驼真强壮哟",
+    "output": "这匹骆驼真强壮哟"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: shuo lin zhou you hen duo diu\n序列 2: shuo lin zhou you hen duo niu\n序列 3: shua lin zhou you hen duo diu\n序列 4: shua lin zhou you hen duo niu\n序列 5: shuo lin zhong you hen duo diu\n序列 6: shuo lin zhong you hen duo niu\n序列 7: lu lin zhou you hen duo diu\n序列 8: lu lin zhou you hen duo niu\n序列 9: shua lin zhong you hen duo diu\n序列 10: shua lin zhong you hen duo niu\nTop K 汉字序列 (按联合概率排序):\n序列 1: 树林中有很多鸟\n序列 2: 树林中有很多少\n序列 3: 书林中有很多鸟\n序列 4: 恕林中有很多鸟\n序列 5: 束林中有很多鸟\n序列 6: 输林中有很多鸟\n序列 7: 算林中有很多鸟\n序列 8: 树林中有很多鸟\n序列 9: 床林中有很多鸟\n序列 10: 伤林中有很多鸟",
+    "output": "树林中有很多鸟"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: tao bao ruo fang zai he shang ka\n序列 2: tao bao ruo fang zai he shang o\n序列 3: tao bao ruo fang zai he shang cang\n序列 4: tao bao ruo fang zai he shang ha\n序列 5: tao bao ruo fang zai he shang gou\n序列 6: tao bao ruo fang zai he shang rao\n序列 7: tao bao ruo fang zai he shang gao\n序列 8: dao bao ruo fang zai he shang ka\n序列 9: dao bao ruo fang zai he shang o\n序列 10: tao bao ruo fang zai he shang la\nTop K 汉字序列 (按联合概率排序):\n序列 1: 他把肉放在火上烤\n序列 2: 得把肉放在火上烤\n序列 3: 傲把肉放在火上烤\n序列 4: 请把肉放在火上烤\n序列 5: 牙把肉放在火上烤\n序列 6: 炮把肉放在火上烤\n序列 7: 饺把肉放在火上烤\n序列 8: 待把肉放在火上烤\n序列 9: 包把肉放在火上烤\n序列 10: 讨论肉放在火上烤",
+    "output": "他把肉放在火上烤"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: ke wai ling yi zu ni\n序列 2: ke wai ling yi zu yi\n序列 3: ke wai ling ti zu ni\n序列 4: ke wai lin yi zu ni\n序列 5: ke wai ling ti zu yi\n序列 6: ke wai ling yi zu li\n序列 7: ke wai lin yi zu yi\n序列 8: ke wai ling ni zu ni\n序列 9: ke wai ling xin zu ni\n序列 10: ke wai lin ti zu ni\nTop K 汉字序列 (按联合概率排序):\n序列 1: 卡瓦略踢足球\n序列 2: 卡瓦略踢足球\n序列 3: 课瓦略踢足球\n序列 4: 客瓦略踢足球\n序列 5: 课瓦略踢足球\n序列 6: 客瓦略踢足球\n序列 7: 尬瓦略踢足球\n序列 8: 尬瓦略踢足球\n序列 9: 客谋略踢足球\n序列 10: 课谋略踢足球",
+    "output": "卡瓦略踢足球"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: jin wan na qu tian gan qin\n序列 2: zhen wan na qu tian gan qin\n序列 3: jin wan na qu tan gan qin\n序列 4: zhen wan na qu tan gan qin\n序列 5: jin wan na qu tun gan qin\n序列 6: jin wan na qu nan gan qin\n序列 7: jin wan na qu tuan gan qin\n序列 8: jin wan na qu tian gan cen\n序列 9: zhen wan na qu tun gan qin\n序列 10: zhen wan na qu nan gan qin\nTop K 汉字序列 (按联合概率排序):\n序列 1: 今晚要去弹钢琴\n序列 2: 禁晚要去弹钢琴\n序列 3: 针晚要去弹钢琴\n序列 4: 今晚要去弹钢琴\n序列 5: 筝晚要去弹钢琴\n序列 6: 者晚要去弹钢琴\n序列 7: 贼晚要去弹钢琴\n序列 8: 只晚要去弹钢琴\n序列 9: 餐晚要去弹钢琴\n序列 10: 烦晚要去弹钢琴",
+    "output": "今晚要去弹钢琴"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: zeng me sha fa ban lao\n序列 2: zeng me sha fa ban lai\n序列 3: ceng me sha fa ban lao\n序列 4: zeng ba sha fa ban lao\n序列 5: zeng me sha fa fan lao\n序列 6: e me sha fa ban lao\n序列 7: ceng me sha fa ban lai\n序列 8: zeng wai sha fa ban lao\n序列 9: zeng ba sha fa ban lai\n序列 10: zeng me sha fa fan lai\nTop K 汉字序列 (按联合概率排序):\n序列 1: 请把沙发搬来\n序列 2: 请把沙发搬来\n序列 3: 得把沙发搬来\n序列 4: 得把沙发搬来\n序列 5: 贼把沙发搬来\n序列 6: 静把沙发搬来\n序列 7: 警把沙发搬来\n序列 8: 京把沙发搬来\n序列 9: 睛把沙发搬来\n序列 10: 何把沙发搬来",
+    "output": "请把沙发搬来"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: ta huan me guo lin feng\n序列 2: na huan me guo lin feng\n序列 3: ta huan me guo lin peng\n序列 4: ta huan me guo lin fen\n序列 5: ta huan duo guo lin feng\n序列 6: ta huan fang guo lin feng\n序列 7: ta huan me guo lin meng\n序列 8: ta huan bao guo lin feng\n序列 9: ta huan wa guo lin feng\n序列 10: ta pan me guo lin feng\nTop K 汉字序列 (按联合概率排序):\n序列 1: 他盼望刮烈风\n序列 2: 他盼望刮烈火\n序列 3: 遍盼望刮烈风\n序列 4: 边盼望刮烈风\n序列 5: 美盼望刮烈风\n序列 6: 妹盼望刮烈风\n序列 7: 造盼望刮烈风\n序列 8: 以盼望刮烈风\n序列 9: 泪盼望刮烈风\n序列 10: 为盼望刮烈风",
+    "output": "他盼望刮烈风"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: tian kao kou wo dui bie hao\n序列 2: tian kao gan wo dui bie hao\n序列 3: zan kao kou wo dui bie hao\n序列 4: zan kao gan wo dui bie hao\n序列 5: tian kao kan wo dui bie hao\n序列 6: jin kao kou wo dui bie hao\n序列 7: jin kao gan wo dui bie hao\n序列 8: zan kao kan wo dui bie hao\n序列 9: tian ta kou wo dui bie hao\n序列 10: tian kao kou bie dui bie hao\nTop K 汉字序列 (按联合概率排序):\n序列 1: 今天阳光特别好\n序列 2: 赞他尴尬特别好\n序列 3: 赞他窘迫特别好\n序列 4: 赞他尴尬间别好\n序列 5: 参差楼房特别好\n序列 6: 赞他把沙就别好\n序列 7: 赞他尴尬队别好\n序列 8: 赞他尴尬二别好\n序列 9: 禁天阳光特别好\n序列 10: 天空调房特别好",
+    "output": "今天阳光特别好"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: luo shi bu hui diao shi cuo yan\n序列 2: luo shi bu ge diao shi cuo yan\n序列 3: luo shi bu hui diao qiong cuo yan\n序列 4: luo shi bu ge diao qiong cuo yan\n序列 5: luo shi wo hui diao shi cuo yan\n序列 6: luo shi bu hui diao dou cuo yan\n序列 7: luo shi wo ge diao shi cuo yan\n序列 8: luo shi bu ge diao dou cuo yan\n序列 9: luo shi bu hui diao shi zuo yan\n序列 10: luo shi bu ge diao shi zuo yan\nTop K 汉字序列 (按联合概率排序):\n序列 1: 老师不会留错作业\n序列 2: 落师不会留错作业\n序列 3: 饺师不会留错作业\n序列 4: 遍师不会留错作业\n序列 5: 边师不会留错作业\n序列 6: 者师不会留错作业\n序列 7: 匹师不会留错作业\n序列 8: 驼师不会留错作业\n序列 9: 寺师不会留错作业\n序列 10: 房师不会留错作业",
+    "output": "老师不会留错作业"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: bie suan yin neng wai wan le\n序列 2: bie suan yin neng wai wan li\n序列 3: bie suan yin qing wai wan le\n序列 4: bie suan yin qing wai wan li\n序列 5: ba suan yin neng wai wan le\n序列 6: ba suan yin neng wai wan li\n序列 7: du suan yin neng wai wan le\n序列 8: ba suan yin qing wai wan le\n序列 9: pie suan yin neng wai wan le\n序列 10: du suan yin neng wai wan li\nTop K 汉字序列 (按联合概率排序):\n序列 1: 比赛已经快完了\n序列 2: 渡赛已经快完了\n序列 3: 落赛已经快完了\n序列 4: 匹赛已经快完了\n序列 5: 步赛已经快完了\n序列 6: 渡算已经快完了\n序列 7: 尊者已经快完了\n序列 8: 骆驼已经快完了\n序列 9: 落算已经快完了\n序列 10: 妥善已经快完了",
+    "output": "比赛已经快完了"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: qing kuang shi fu shi xie\n序列 2: qing kuan shi fu shi xie\n序列 3: qing kuang shi fu shu xie\n序列 4: qing kuang shi fu shuo xie\n序列 5: qing huang shi fu shi xie\n序列 6: qing kuai shi fu shi xie\n序列 7: qing kuan shi fu shu xie\n序列 8: qing kuang shi fou shi xie\n序列 9: qing kuan shi fu shuo xie\n序列 10: jing kuang shi fu shi xie\nTop K 汉字序列 (按联合概率排序):\n序列 1: 情况是否属实\n序列 2: 情况是否适鞋\n序列 3: 情况是否师鞋\n序列 4: 情况是否实鞋\n序列 5: 情况是否视鞋\n序列 6: 情况是否师鞋\n序列 7: 情况是否拾行\n序列 8: 情况是否拾行\n序列 9: 情况是否属实\n序列 10: 情况是否书鞋",
+    "output": "情况是否属实"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: zhe liang zao qian zhe reng qiu\n序列 2: zhe liang zao tian zhe reng qiu\n序列 3: zhe liang zao qian zhe reng jie\n序列 4: zhe liang zao tian zhe reng jie\n序列 5: zhe liang zao qing zhe reng qiu\n序列 6: zhe liang zao qing zhe reng jie\n序列 7: zhe liang zao qian zhe reng sao\n序列 8: zhe liang zao qian zhe reng jiu\n序列 9: zhe liang zao tian zhe reng sao\n序列 10: zhe liang zao tian zhe reng jiu\nTop K 汉字序列 (按联合概率排序):\n序列 1: 者六早餐吃蒸饺\n序列 2: 周六早餐吃蒸饺\n序列 3: 者亮早餐吃蒸饺\n序列 4: 者量早餐吃蒸饺\n序列 5: 这匹早餐吃蒸饺\n序列 6: 者俩早餐吃蒸饺\n序列 7: 者俩早餐吃蒸饺\n序列 8: 绰约早餐吃蒸饺\n序列 9: 力量早餐吃蒸饺\n序列 10: 床六早餐吃蒸饺",
+    "output": "周六早餐吃蒸饺"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: xiang hen xi huang shi lin xin\n序列 2: xiang hen xi huang shi yin xin\n序列 3: xiang hen xi huang cha lin xin\n序列 4: xiang hen xi huang chi lin xin\n序列 5: xiang hen xi huang cha yin xin\n序列 6: xiang hen xi huang chi yin xin\n序列 7: xiang hen xi huang zhi lin xin\n序列 8: xiang hen xi huang zhi yin xin\n序列 9: xiang hen xi huang di lin xin\n序列 10: xiang hen xi huang di yin xin\nTop K 汉字序列 (按联合概率排序):\n序列 1: 他很喜欢吃点心\n序列 2: 他很喜欢吃点心\n序列 3: 箱很喜欢吃点心\n序列 4: 箱很喜欢吃点心\n序列 5: 土很喜欢吃点心\n序列 6: 土很喜欢吃点心\n序列 7: 校很喜欢吃点心\n序列 8: 校很喜欢吃点心\n序列 9: 鞋很喜欢吃点心\n序列 10: 贵很喜欢吃点心",
+    "output": "他很喜欢吃点心"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: su weng xing ri hou mo zhou\n序列 2: su weng xing ri hou ma zhou\n序列 3: su weng xing ri he mo zhou\n序列 4: su weng xing ri hao mo zhou\n序列 5: su weng xing luo hou mo zhou\n序列 6: su weng xing ri hou mao zhou\n序列 7: su weng xing ri he ma zhou\n序列 8: su weng xing ri hao ma zhou\n序列 9: su weng jian ri hou mo zhou\n序列 10: su weng xing luo hou ma zhou\nTop K 汉字序列 (按联合概率排序):\n序列 1: 事故应如何报警\n序列 2: 速故应如何报警\n序列 3: 事实应如何报警\n序列 4: 师故应如何报警\n序列 5: 视故应如何报警\n序列 6: 适故应如何报警\n序列 7: 实故应如何报警\n序列 8: 首故应如何报警\n序列 9: 事故应如何报警\n序列 10: 事故应如何报警",
+    "output": "事故应如何报警"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: wo nei wo zhe heng de chuang gong\n序列 2: wo nei wo zhe heng de shua gong\n序列 3: wo nei ba zhe heng de chuang gong\n序列 4: wo nei wo zhe heng de chuai gong\n序列 5: wo nei wa zhe heng de chuang gong\n序列 6: wo nei wo zhe heng dui chuang gong\n序列 7: wo nei wo zhe heng de chuo gong\n序列 8: wo nei ba zhe heng de shua gong\n序列 9: wo nei wo zhe heng de chai gong\n序列 10: wo nei wo zhe hun de chuang gong\nTop K 汉字序列 (按联合概率排序):\n序列 1: 我得把这混蛋踹开\n序列 2: 我得把这混蛋踹开\n序列 3: 我们把这混蛋踹开\n序列 4: 我得把这混蛋窗台\n序列 5: 我得把这混蛋刷牙\n序列 6: 我得把这混蛋窗户\n序列 7: 我得把这种蛋踹开\n序列 8: 我得把这混蛋多少\n序列 9: 国得把这混蛋踹开\n序列 10: 果得把这混蛋踹开",
+    "output": "我得把这混蛋踹开"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: lu bing zong zhao wo men cha yun\n序列 2: lu bing zong zhao wo men cha ren\n序列 3: lie bing zong zhao wo men cha yun\n序列 4: zhun bing zong zhao wo men cha yun\n序列 5: lve bing zong zhao wo men cha yun\n序列 6: li bing zong zhao wo men cha yun\n序列 7: lu bing zong zhao wo men cha luan\n序列 8: zen bing zong zhao wo men cha yun\n序列 9: lu bing zong zhao wo men cha die\n序列 10: lu bing zong zhao wo men cha le\nTop K 汉字序列 (按联合概率排序):\n序列 1: 领队总让我们插队\n序列 2: 决定总让我们插队\n序列 3: 利队总让我们插队\n序列 4: 料队总让我们插队\n序列 5: 脸队总让我们插队\n序列 6: 帘队总让我们插队\n序列 7: 命队总让我们插队\n序列 8: 顶队总让我们插队\n序列 9: 定队总让我们插队\n序列 10: 仆队总让我们插队",
+    "output": "领队总让我们插队"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: xiang nuo cha ge hou de ni\n序列 2: xiao nuo cha ge hou de ni\n序列 3: xiang nuo cha ge hou de ming\n序列 4: xiao nuo cha ge hou de ming\n序列 5: xie nuo cha ge hou de ni\n序列 6: xiang miu cha ge hou de ni\n序列 7: xiang nuo cha ge hou de ge\n序列 8: xie nuo cha ge hou de ming\n序列 9: xiao miu cha ge hou de ni\n序列 10: xiao nuo cha ge hou de ge\nTop K 汉字序列 (按联合概率排序):\n序列 1: 小鸟唱歌好动听\n序列 2: 箱鸟唱歌好动听\n序列 3: 校鸟唱歌好动听\n序列 4: 鞋鸟唱歌好动听\n序列 5: 小鸟唱歌好动听\n序列 6: 戏鸟唱歌好动听\n序列 7: 洗鸟唱歌好动听\n序列 8: 析鸟唱歌好动听\n序列 9: 气鸟唱歌好动听\n序列 10: 雪鸟唱歌好动听",
+    "output": "小鸟唱歌好动听"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: bian neng zuo le xin tou xie\n序列 2: bian neng zuo le xin liu xie\n序列 3: bian neng zuo le jiu tou xie\n序列 4: bian neng zuo le jiu liu xie\n序列 5: bian neng zuo le cen tou xie\n序列 6: bian neng zuo le xin tiao xie\n序列 7: bian song zuo le xin tou xie\n序列 8: bian neng zuo le jian tou xie\n序列 9: bian qiong zuo le xin tou xie\n序列 10: bian neng zuo le zan tou xie\nTop K 汉字序列 (按联合概率排序):\n序列 1: 别弄脏了新球鞋\n序列 2: 遍弄脏了新球鞋\n序列 3: 边弄脏了新球鞋\n序列 4: 片弄脏了新球鞋\n序列 5: 匹弄脏了新球鞋\n序列 6: 别弄脏了新球鞋\n序列 7: 落弄脏了新球鞋\n序列 8: 音弄脏了新球鞋\n序列 9: 裙弄脏了新球鞋\n序列 10: 变成脏了新球鞋",
+    "output": "别弄脏了新球鞋"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: nuo miu shi chuan min de li lai\n序列 2: nuo miu shi chuan min de leng lai\n序列 3: lun miu shi chuan min de li lai\n序列 4: nuo miu shi chuan min de lian lai\n序列 5: nuo yue shi chuan min de li lai\n序列 6: mu miu shi chuan min de li lai\n序列 7: nu miu shi chuan min de li lai\n序列 8: lun miu shi chuan min de leng lai\n序列 9: nuo wei shi chuan min de li lai\n序列 10: luo miu shi chuan min de li lai\nTop K 汉字序列 (按联合概率排序):\n序列 1: 别蔑视人民的力量\n序列 2: 论蔑视人民的力量\n序列 3: 轻蔑视人民的力量\n序列 4: 落蔑视人民的力量\n序列 5: 怨蔑视人民的力量\n序列 6: 遍蔑视人民的力量\n序列 7: 边蔑视人民的力量\n序列 8: 驼蔑视人民的力量\n序列 9: 坡蔑视人民的力量\n序列 10: 迫蔑视人民的力量",
+    "output": "别蔑视人民的力量"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: yue er yun nong ke bu cuo\n序列 2: yue er yun ru ke bu cuo\n序列 3: yue er yun qu ke bu cuo\n序列 4: bian er yun nong ke bu cuo\n序列 5: bian er yun ru ke bu cuo\n序列 6: bie er yun nong ke bu cuo\n序列 7: yue er yun nong ke bu su\n序列 8: bie er yun ru ke bu cuo\n序列 9: yue er yun ru ke bu su\n序列 10: yue er yun lu ke bu cuo\nTop K 汉字序列 (按联合概率排序):\n序列 1: 幼儿园绿化不错\n序列 2: 约儿园绿化不错\n序列 3: 遍儿园绿化不错\n序列 4: 边儿园绿化不错\n序列 5: 研儿园绿化不错\n序列 6: 幼儿园林也不错\n序列 7: 幼儿园林此不错\n序列 8: 夜儿园绿化不错\n序列 9: 叶儿园绿化不错\n序列 10: 业儿园绿化不错",
+    "output": "幼儿园绿化不错"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: zhe ke le dai gai ding na\n序列 2: shui ke le dai gai ding na\n序列 3: zhe ke le de gai ding na\n序列 4: zhe ke le dai gai diu na\n序列 5: shui ke le de gai ding na\n序列 6: shui ke le dai gai diu na\n序列 7: zhe ke le de gai diu na\n序列 8: zhe he le dai gai ding na\n序列 9: shui ke le de gai diu na\n序列 10: shui he le dai gai ding na\nTop K 汉字序列 (按联合概率排序):\n序列 1: 谁喝了带盖牛奶\n序列 2: 谁喝了带盖牛奶\n序列 3: 者喝了带盖牛奶\n序列 4: 者喝了带盖牛奶\n序列 5: 修路了带盖牛奶\n序列 6: 招待了带盖牛奶\n序列 7: 追丢了带盖牛奶\n序列 8: 修路了带盖牛奶\n序列 9: 者路了带盖牛奶\n序列 10: 首喝了带盖牛奶",
+    "output": "谁喝了带盖牛奶"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: ruo xiang yu zai da jing an gai jie suan\n序列 2: ruo xiang yu zai da jing an gai jie cuan\n序列 3: ruo xiang yu zai da jing an gai jie san\n序列 4: ruo xiang yu zai da jing an gai jie sang\n序列 5: ruo xiang yu zai da jing han gai jie suan\n序列 6: ruo xiang yu zai da jing han gai jie cuan\n序列 7: ruo xia yu zai da jing an gai jie suan\n序列 8: ruo xiu yu zai da jing an gai jie suan\n序列 9: ruo xiang yu zai da jing han gai jie san\n序列 10: ruo xiang yu zai da jing han gai jie sang\nTop K 汉字序列 (按联合概率排序):\n序列 1: 若下雨叫大家赶快解散\n序列 2: 若下雨在大家赶快解散\n序列 3: 若下雨叫大家赶快解散\n序列 4: 若下雨再打架赶快解散\n序列 5: 吞下雨叫大家赶快解散\n序列 6: 滚下雨叫大家赶快解散\n序列 7: 留下雨叫大家赶快解散\n序列 8: 按下雨叫大家赶快解散\n序列 9: 横下雨叫大家赶快解散\n序列 10: 若下雨不大家赶快解散",
+    "output": "若下雨叫大家赶快解散"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: nuo xing jin leng er er lia\n序列 2: nuo seng jin leng er er lia\n序列 3: bie xing jin leng er er lia\n序列 4: nuo xing jin leng er er ning\n序列 5: bie seng jin leng er er lia\n序列 6: nuo xing jin dui er er lia\n序列 7: nuo seng jin leng er er ning\n序列 8: nuo xing jin leng er er lie\n序列 9: nuo xing jin leng er er ei\n序列 10: nuo seng jin dui er er lia\nTop K 汉字序列 (按联合概率排序):\n序列 1: 北京近来很寒冷\n序列 2: 落京近来很寒冷\n序列 3: 姐京近来很寒冷\n序列 4: 社会近来很寒冷\n序列 5: 峰京近来很寒冷\n序列 6: 不会近来很寒冷\n序列 7: 腿京近来很寒冷\n序列 8: 遍京近来很寒冷\n序列 9: 边京近来很寒冷\n序列 10: 步京近来很寒冷",
+    "output": "北京近来很寒冷"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: ceng zhang jia bu ling feng mian bao\n序列 2: ceng zhao jia bu ling feng mian bao\n序列 3: ceng zhang jia bu ling feng yun bao\n序列 4: ceng zhang jia bu ling feng mian pou\n序列 5: ceng zhang jia bu ling feng mian hua\n序列 6: ceng zhang jia bu ling feng bian bao\n序列 7: zun zhang jia bu ling feng mian bao\n序列 8: ceng zhao jia bu ling feng yun bao\n序列 9: ceng zhao jia bu ling feng mian pou\n序列 10: ceng zhao jia bu ling feng mian hua\nTop K 汉字序列 (按联合概率排序):\n序列 1: 村长家每年放鞭炮\n序列 2: 村长家每年风面包\n序列 3: 村长家每年峰面包\n序列 4: 村长家每年放鞭炮\n序列 5: 裙长家每年放鞭炮\n序列 6: 贼长家每年放鞭炮\n序列 7: 村长家每年放鞭炮\n序列 8: 遍长家每年放鞭炮\n序列 9: 边长家每年放鞭炮\n序列 10: 村长家每年外面包",
+    "output": "村长家每年放鞭炮"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: yuan yao ke de rui bu qi\n序列 2: yuan yao ke le rui bu qi\n序列 3: yue yao ke de rui bu qi\n序列 4: yuan yao ke de zhui bu qi\n序列 5: yuan yao ke dian rui bu qi\n序列 6: yuan cang ke de rui bu qi\n序列 7: yuan yao ke de rui mu qi\n序列 8: yuan yao ke zhong rui bu qi\n序列 9: yuan mang ke de rui bu qi\n序列 10: yue yao ke le rui bu qi\nTop K 汉字序列 (按联合概率排序):\n序列 1: 月夜孤狼锐目行\n序列 2: 怨顾客狼锐目行\n序列 3: 园绿化狼锐目行\n序列 4: 远航课狼锐目行\n序列 5: 远航客狼锐目行\n序列 6: 远航孤狼锐目行\n序列 7: 怨夜孤狼锐目行\n序列 8: 约顾客狼锐目行\n序列 9: 月光客狼锐目行\n序列 10: 月光课狼锐目行",
+    "output": "月夜孤狼锐目行"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: hen luan guo zuan er wei qing jue ping fen\n序列 2: hen luan guo zuan er wei qing jue pi fen\n序列 3: hen luan guo zhuan er wei qing jue ping fen\n序列 4: hen luan guo zai er wei qing jue ping fen\n序列 5: hen luan guo zhuan er wei qing jue pi fen\n序列 6: hen luan guo zuan er wei qing jue piao fen\n序列 7: hen luan guo zuan er pen qing jue ping fen\n序列 8: hen luan guo zai er wei qing jue pi fen\n序列 9: hen luan guo zuan er wei qing jue ping ping\n序列 10: hen luan guo zuan er pen qing jue pi fen\nTop K 汉字序列 (按联合概率排序):\n序列 1: 温暖夸赞而非轻蔑批评\n序列 2: 们暖夸赞而非轻蔑批评\n序列 3: 温暖夸赞而非轻蔑批评\n序列 4: 温暖夸赞而非轻蔑批评\n序列 5: 音暖夸赞而非轻蔑批评\n序列 6: 恩怨夸赞而非轻蔑批评\n序列 7: 论暖夸赞而非轻蔑批评\n序列 8: 药暖夸赞而非轻蔑批评\n序列 9: 尔暖夸赞而非轻蔑批评\n序列 10: 寺暖夸赞而非轻蔑批评",
+    "output": "温暖夸赞而非轻蔑批评"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: rui dian jiu liang xie gua deng\n序列 2: rui dian jiu liang xie gua zang\n序列 3: rui dian jiu liang xie gua zhong\n序列 4: rui dian jiu liang xie gua chai\n序列 5: rui dian jiu liang xie gua zhun\n序列 6: rui dian jiu liang xie gou deng\n序列 7: rui dian jiu liang xie gua zhua\n序列 8: rui bian jiu liang xie gua deng\n序列 9: rui dian jiu liang xie gou zang\n序列 10: rui bian jiu liang xie gua zang\nTop K 汉字序列 (按联合概率排序):\n序列 1: 对面有两所高中\n序列 2: 酒店有两所高中\n序列 3: 腿店有两所高中\n序列 4: 为店有两所高中\n序列 5: 队店有两所高中\n序列 6: 入店有两所高中\n序列 7: 腿面有两所高中\n序列 8: 腿面有两所高中\n序列 9: 为面有两所高中\n序列 10: 为面有两所高中",
+    "output": "对面有两所高中"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: jie de kuo li cao shang hen teng\n序列 2: jie de hui li cao shang hen teng\n序列 3: nie de kuo li cao shang hen teng\n序列 4: nie de hui li cao shang hen teng\n序列 5: jie de kuo li xiao shang hen teng\n序列 6: jie de kuo li cao shi hen teng\n序列 7: jie de hui li xiao shang hen teng\n序列 8: jie de kuo li cao shang ken teng\n序列 9: jie de hui li cao shi hen teng\n序列 10: nie de kuo li xiao shang hen teng\nTop K 汉字序列 (按联合概率排序):\n序列 1: 借几块里擦伤很疼\n序列 2: 跌到坑里擦伤很疼\n序列 3: 跑到坑里擦伤很疼\n序列 4: 姐到坑里擦伤很疼\n序列 5: 想到坑里擦伤很疼\n序列 6: 躺到坑里擦伤很疼\n序列 7: 别讲课里擦伤很疼\n序列 8: 解散步里擦伤很疼\n序列 9: 年到坑里擦伤很疼\n序列 10: 落到坑里擦伤很疼",
+    "output": "跌到坑里擦伤很疼"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: bing ke ge zhao yao bu du zun ding xia zhe kou fan\n序列 2: ling ke ge zhao yao bu du zun ding xia zhe kou fan\n序列 3: bing ke ge zhao yao bu du zun ting xia zhe kou fan\n序列 4: ling ke ge zhao yao bu du zun ting xia zhe kou fan\n序列 5: bing ke ge zhao yao bu du zun teng xia zhe kou fan\n序列 6: ling ke ge zhao yao bu du zun teng xia zhe kou fan\n序列 7: bing ke ge zhao yao bu du zun zun xia zhe kou fan\n序列 8: bing ke ge zhao yao bu du zun tun xia zhe kou fan\n序列 9: ling ke ge zhao yao bu du zun zun xia zhe kou fan\n序列 10: bing ke ge zhao ye bu du zun ding xia zhe kou fan\nTop K 汉字序列 (按联合概率排序):\n序列 1: 宁可饿着也不动嘴吞下这口饭\n序列 2: 顶可饿着也不动嘴吞下这口饭\n序列 3: 定可饿着也不动嘴吞下这口饭\n序列 4: 硬可饿着也不动嘴吞下这口饭\n序列 5: 量可饿着也不动嘴吞下这口饭\n序列 6: 命可饿着也不动嘴吞下这口饭\n序列 7: 翁可饿着也不动嘴吞下这口饭\n序列 8: 林可饿着也不动嘴吞下这口饭\n序列 9: 京可饿着也不动嘴吞下这口饭\n序列 10: 睛可饿着也不动嘴吞下这口饭",
+    "output": "宁可饿着也不动嘴吞下这口饭"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: zuo suan cha ge hai ren\n序列 2: zao suan cha ge hai ren\n序列 3: zuo cong cha ge hai ren\n序列 4: zao cong cha ge hai ren\n序列 5: zuo suan cha kai hai ren\n序列 6: zuo cuan cha ge hai ren\n序列 7: zao suan cha kai hai ren\n序列 8: zao cuan cha ge hai ren\n序列 9: zuo sun cha ge hai ren\n序列 10: zuo suan cha ge kuai ren\nTop K 汉字序列 (按联合概率排序):\n序列 1: 总算绕开坏人\n序列 2: 造算绕开坏人\n序列 3: 京算绕开坏人\n序列 4: 睛算绕开坏人\n序列 5: 警算绕开坏人\n序列 6: 静算绕开坏人\n序列 7: 饺算绕开坏人\n序列 8: 种算绕开坏人\n序列 9: 架算绕开坏人\n序列 10: 壮算绕开坏人",
+    "output": "总算绕开坏人"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: ba ou huo wo shi kuai huan nv ei\n序列 2: ba ou huo wo shi guai huan nv ei\n序列 3: me ou huo wo shi kuai huan nv ei\n序列 4: me ou huo wo shi guai huan nv ei\n序列 5: ba ou kuo wo shi kuai huan nv ei\n序列 6: ba ou kuo wo shi guai huan nv ei\n序列 7: ba ou huo wo shi huai huan nv ei\n序列 8: ba ou huo wo shi kuai wan nv ei\n序列 9: ba ou huo wo shi guai wan nv ei\n序列 10: me ou kuo wo shi kuai huan nv ei\nTop K 汉字序列 (按联合概率排序):\n序列 1: 妈妈夸我是乖乖女诶\n序列 2: 迷雾夸我是乖乖女诶\n序列 3: 温暖夸我是乖乖女诶\n序列 4: 苍茫夸我是乖乖女诶\n序列 5: 老翁夸我是乖乖女诶\n序列 6: 杂物夸我是乖乖女诶\n序列 7: 阻碍夸我是乖乖女诶\n序列 8: 发愁夸我是乖乖女诶\n序列 9: 保管夸我是乖乖女诶\n序列 10: 妥善夸我是乖乖女诶",
+    "output": "妈妈夸我是乖乖女诶"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: ta kai ta liang le can zu\n序列 2: ta kai ta liang le can zhu\n序列 3: qiong kai ta liang le can zu\n序列 4: qiong kai ta liang le can zhu\n序列 5: ta kai ta ling le can zu\n序列 6: ta kai ta ling le can zhu\n序列 7: ta kai ta liang de can zu\n序列 8: ta kai ta liang de can zhu\n序列 9: xiang kai ta liang le can zu\n序列 10: xiang kai ta liang le can zhu\nTop K 汉字序列 (按联合概率排序):\n序列 1: 恰好他酿了坛醋\n序列 2: 箱好他酿了坛醋\n序列 3: 者好他酿了坛醋\n序列 4: 夸赞他酿了坛醋\n序列 5: 箱着他酿了坛醋\n序列 6: 饺好他酿了坛醋\n序列 7: 箱海他酿了坛醋\n序列 8: 炮好他酿了坛醋\n序列 9: 妹好他酿了坛醋\n序列 10: 美好他酿了坛醋",
+    "output": "恰好他酿了坛醋"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: chan neng qu yun neng chan zang\n序列 2: chan neng qu yun neng chan cang\n序列 3: sen neng qu yun neng chan zang\n序列 4: sen neng qu yun neng chan cang\n序列 5: chan neng qu suan neng chan zang\n序列 6: chan neng qu pian neng chan zang\n序列 7: chan neng qu suan neng chan cang\n序列 8: chan neng qu pian neng chan cang\n序列 9: sen neng qu suan neng chan zang\n序列 10: sen neng qu pian neng chan zang\nTop K 汉字序列 (按联合概率排序):\n序列 1: 凑钱去云南山寨\n序列 2: 船舱去云南山寨\n序列 3: 决定去云南山寨\n序列 4: 今年去云南山寨\n序列 5: 锦囊去云南山寨\n序列 6: 计划去云南山寨\n序列 7: 缠能去云南山寨\n序列 8: 缠能去云南山寨\n序列 9: 蛋能去云南山寨\n序列 10: 蛋能去云南山寨",
+    "output": "咱俩去云南山寨"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: zhe xie zhao yao neng jue kuang yi qian\n序列 2: zhe xie zhao yao neng jue guang yi qian\n序列 3: zhe xie zhao yi neng jue kuang yi qian\n序列 4: zhe xie zhao yi neng jue guang yi qian\n序列 5: zhe xie zhao yao neng zui kuang yi qian\n序列 6: zhe xie zhao yao neng zui guang yi qian\n序列 7: zhe xie zhao yao neng jue huang yi qian\n序列 8: zhe xie zhao yao neng jue gong yi qian\n序列 9: zhe xie zhao yi neng zui kuang yi qian\n序列 10: zhe xie zhao yi neng zui guang yi qian\nTop K 汉字序列 (按联合概率排序):\n序列 1: 这些炸药能摧毁一切\n序列 2: 这些炸药能摧毁一切\n序列 3: 者些炸药能摧毁一切\n序列 4: 者些炸药能摧毁一切\n序列 5: 这些炸药能摧毁一会\n序列 6: 这些炸药能摧毁一会\n序列 7: 这些炸药能摧毁一切\n序列 8: 这些炸药能摧毁一切\n序列 9: 这些炸药能摧毁一切\n序列 10: 这些炸药能摧毁一切",
+    "output": "这些炸药能摧毁一切"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: leng lve de xiang cong zheng kuo hao o\n序列 2: leng lve de ye cong zheng kuo hao o\n序列 3: neng lve de xiang cong zheng kuo hao o\n序列 4: neng lve de ye cong zheng kuo hao o\n序列 5: nin lve de xiang cong zheng kuo hao o\n序列 6: leng lve de xiang cai zheng kuo hao o\n序列 7: leng lve de gei cong zheng kuo hao o\n序列 8: nin lve de ye cong zheng kuo hao o\n序列 9: leng lve de ye cai zheng kuo hao o\n序列 10: neng lve de xiang cai zheng kuo hao o\nTop K 汉字序列 (按联合概率排序):\n序列 1: 嫩绿的小草真可爱哦\n序列 2: 嫩绿的小风筝可爱哦\n序列 3: 嫩绿的石头真可爱哦\n序列 4: 嫩绿的小风筝阔向哦\n序列 5: 嫩绿的小风筝方向哦\n序列 6: 命绿的小草真可爱哦\n序列 7: 嫩绿的小风筝阔愧哦\n序列 8: 嫩绿的小风筝阔心哦\n序列 9: 嫩绿的小风筝羞愧哦\n序列 10: 宁静的小草真可爱哦",
+    "output": "嫩绿的小草真可爱哦"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: wo wei xiu shi fang cong liu lu\n序列 2: wo wei xiu shi fang qing liu lu\n序列 3: wo wei xia shi fang cong liu lu\n序列 4: wo wei xiu shou fang cong liu lu\n序列 5: wo wei xiu she fang cong liu lu\n序列 6: wo wei xiu shi fang cong niu lu\n序列 7: wo wei xiu shi fang sao liu lu\n序列 8: wo wei xiao shi fang cong liu lu\n序列 9: wo wei xiu shi fang chong liu lu\n序列 10: wo wei xiu shai fang cong liu lu\nTop K 汉字序列 (按联合概率排序):\n序列 1: 莫为小事发愁流泪\n序列 2: 莫为小事发愁流泪\n序列 3: 莫为小事发愁流泪\n序列 4: 莫为小事发愁流泪\n序列 5: 步为小事发愁流泪\n序列 6: 落为小事发愁流泪\n序列 7: 迫为小事发愁流泪\n序列 8: 坡为小事发愁流泪\n序列 9: 莫为小事发愁丢了\n序列 10: 国为小事发愁流泪",
+    "output": "莫为小事发愁流泪"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: jing zhou gan hao dui tie shuan zhao de xiang gou\n序列 2: jing zhou gan hao dui tie shui zhao de xiang gou\n序列 3: jing zhou gan hao dui tie shuan zhao de xi gou\n序列 4: jing zhou gan hao dui tie shuan zhao de xia gou\n序列 5: qing zhou gan hao dui tie shuan zhao de xiang gou\n序列 6: jing zhou gan hao dong tie shuan zhao de xiang gou\n序列 7: ting zhou gan hao dui tie shuan zhao de xiang gou\n序列 8: jing zhou gan hao dui tie shan zhao de xiang gou\n序列 9: jing zhou gan hao dui tie shui zhao de xi gou\n序列 10: jing zhou gan hao dui tiao shuan zhao de xiang gou\nTop K 汉字序列 (按联合概率排序):\n序列 1: 请照看好那条拴住的小狗\n序列 2: 请照看好那条拴着的小狗\n序列 3: 京照看好那条拴住的小狗\n序列 4: 睛照看好那条拴住的小狗\n序列 5: 警照看好那条拴住的小狗\n序列 6: 静照看好那条拴住的小狗\n序列 7: 警照看好那条拴着的小狗\n序列 8: 静照看好那条拴着的小狗\n序列 9: 睛照看好那条拴着的小狗\n序列 10: 京照看好那条拴着的小狗",
+    "output": "请照看好那条拴着的小狗"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: wo xie shi bie ne zai xin\n序列 2: wo xie shi bie ne zao xin\n序列 3: wo xie shi mei ne zai xin\n序列 4: wo xie shi gan ne zai xin\n序列 5: wo tie shi bie ne zai xin\n序列 6: wo xie shi mei ne zao xin\n序列 7: wo xie shi wo ne zai xin\n序列 8: wo xie shi bie nuo zai xin\n序列 9: wo xie shi gan ne zao xin\n序列 10: wo tie shi bie ne zao xin\nTop K 汉字序列 (按联合概率排序):\n序列 1: 我确实没捏造信\n序列 2: 我确实没捏造心\n序列 3: 我确实没捏造信\n序列 4: 我确实没捏造信\n序列 5: 我确实没捏造心\n序列 6: 我确实没捏造声\n序列 7: 我确实没捏造生\n序列 8: 我确实没捏造声\n序列 9: 的确实没捏造信\n序列 10: 我们实没捏造信",
+    "output": "我确实没捏造信"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: da chuan ceng lai zao jing zhe bie jian kuai\n序列 2: da cuan ceng lai zao jing zhe bie jian kuai\n序列 3: da chuan ceng lai gong jing zhe bie jian kuai\n序列 4: da shuan ceng lai zao jing zhe bie jian kuai\n序列 5: da chuan ceng lai kuan jing zhe bie jian kuai\n序列 6: da shan ceng lai zao jing zhe bie jian kuai\n序列 7: da chuan ceng lai zong jing zhe bie jian kuai\n序列 8: da chuan ceng lai gua jing zhe bie jian kuai\n序列 9: da chuan ceng lai bing jing zhe bie jian kuai\n序列 10: da suan ceng lai zao jing zhe bie jian kuai\nTop K 汉字序列 (按联合概率排序):\n序列 1: 他专程来捐赠这笔钱款\n序列 2: 打针程来捐赠这笔钱款\n序列 3: 打架程来捐赠这笔钱款\n序列 4: 蛋专程来捐赠这笔钱款\n序列 5: 大学校来捐赠这笔钱款\n序列 6: 队专程来捐赠这笔钱款\n序列 7: 大学忙着眼睛这笔钱款\n序列 8: 造专程来捐赠这笔钱款\n序列 9: 他专程来自赠这笔钱款\n序列 10: 总算程来捐赠这笔钱款",
+    "output": "他专程来捐赠这笔钱款"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: e ge he sa sai yi qi xia niang na\n序列 2: e ge he sa sang yi qi xia niang na\n序列 3: ming ge he sa sai yi qi xia niang na\n序列 4: ming ge he sa sang yi qi xia niang na\n序列 5: e ge he sa sai yi qi xia di na\n序列 6: e ge he sa sang yi qi xia di na\n序列 7: ming ge he sa sai yi qi xia di na\n序列 8: ming ge he sa sang yi qi xia di na\n序列 9: e ge he sa sai yi qi xia niang le\n序列 10: e ge he sa sang yi qi xia niang le\nTop K 汉字序列 (按联合概率排序):\n序列 1: 哥哥和嫂嫂一起扫地呢\n序列 2: 命哥和嫂嫂一起扫地呢\n序列 3: 何哥和嫂嫂一起扫地呢\n序列 4: 果哥和嫂嫂一起扫地呢\n序列 5: 国哥和嫂嫂一起扫地呢\n序列 6: 夸我和嫂嫂一起扫地呢\n序列 7: 课哥和嫂嫂一起扫地呢\n序列 8: 客哥和嫂嫂一起扫地呢\n序列 9: 量哥和嫂嫂一起扫地呢\n序列 10: 坡哥和嫂嫂一起扫地呢",
+    "output": "哥哥和嫂嫂一起扫地呢"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: hen li jia shi nong run ying\n序列 2: hen li jia shi tong run ying\n序列 3: hen li de shi nong run ying\n序列 4: hen li jia shi nong reng ying\n序列 5: hen di jia shi nong run ying\n序列 6: hen li jia shi nong lin ying\n序列 7: hen li de shi tong run ying\n序列 8: hen li jian shi nong run ying\n序列 9: hen li jia shi tang run ying\n序列 10: hen li jia shi tong reng ying\nTop K 汉字序列 (按联合概率排序):\n序列 1: 坑里的石头真硬\n序列 2: 杆旁的石头真硬\n序列 3: 根旁的石头真硬\n序列 4: 汉里的石头真硬\n序列 5: 困里的石头真硬\n序列 6: 针里的石头真硬\n序列 7: 缠里的石头真硬\n序列 8: 尔里的石头真硬\n序列 9: 票里的石头真硬\n序列 10: 孤狼的石头真硬",
+    "output": "坑里的石头真硬"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: shang guo tuan neng fang he ming ma\n序列 2: chang guo tuan neng fang he ming ma\n序列 3: qing guo tuan neng fang he ming ma\n序列 4: shang guo kuang neng fang he ming ma\n序列 5: shang guo pang neng fang he ming ma\n序列 6: chang guo kuang neng fang he ming ma\n序列 7: chuang guo tuan neng fang he ming ma\n序列 8: qing guo kuang neng fang he ming ma\n序列 9: shang guo kang neng fang he ming ma\n序列 10: chang guo pang neng fang he ming ma\nTop K 汉字序列 (按联合概率排序):\n序列 1: 窗户旁能放花瓶吗\n序列 2: 水果旁能放花瓶吗\n序列 3: 伤户旁能放花瓶吗\n序列 4: 床户旁能放花瓶吗\n序列 5: 瓶户旁能放花瓶吗\n序列 6: 平户旁能放花瓶吗\n序列 7: 评户旁能放花瓶吗\n序列 8: 情况旁能放花瓶吗\n序列 9: 水果药能放花瓶吗\n序列 10: 窗户旁能放花瓶吗",
+    "output": "窗户旁能放花瓶吗"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: zuo nve nai kun na tang hen wan cui ji zhuang\n序列 2: zuo nian nai kun na tang hen wan cui ji zhuang\n序列 3: zuo nve nai pen na tang hen wan cui ji zhuang\n序列 4: zuo nve nai kun na tang hen wan cui qi zhuang\n序列 5: zuo nian nai pen na tang hen wan cui ji zhuang\n序列 6: zuo nve nai kun na tang hen tuan cui ji zhuang\n序列 7: zuo nian nai kun na tang hen wan cui qi zhuang\n序列 8: zuo nve nai kun na tang hen bai cui ji zhuang\n序列 9: zuo nian nai kun na tang hen tuan cui ji zhuang\n序列 10: zuo nve nai pen na tang hen wan cui qi zhuang\nTop K 汉字序列 (按联合概率排序):\n序列 1: 昨天太困躺到很晚才起床\n序列 2: 昨天太困躺到很晚才起来\n序列 3: 昨天太困躺到很晚才起床\n序列 4: 昨天太困躺到很晚才起床\n序列 5: 昨天太困讨论很晚才起床\n序列 6: 昨天太困头到很晚才起床\n序列 7: 昨天太困躺到很晚才起装\n序列 8: 落天太困躺到很晚才起床\n序列 9: 昨天太困痛到很晚才起床\n序列 10: 作业太困躺到很晚才起床",
+    "output": "昨天太困躺到很晚才起床"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: lun qu zhuan dian jiu bie pou shi kui\n序列 2: lun qu zhuan gan jiu bie pou shi kui\n序列 3: lun qu zhuan yan jiu bie pou shi kui\n序列 4: leng qu zhuan dian jiu bie pou shi kui\n序列 5: lun qu jue dian jiu bie pou shi kui\n序列 6: lun qu zhuan nian jiu bie pou shi kui\n序列 7: lun qu chuang dian jiu bie pou shi kui\n序列 8: luo qu zhuan dian jiu bie pou shi kui\n序列 9: lun qu zhuan dian jiu bie pou shi hui\n序列 10: lun qu zhuo dian jiu bie pou shi kui\nTop K 汉字序列 (按联合概率排序):\n序列 1: 若想钻研就别怕吃亏\n序列 2: 若想钻研就别怕吃亏\n序列 3: 梦想钻研就别怕吃亏\n序列 4: 论想钻研就别怕吃亏\n序列 5: 梦想钻研就别怕吃亏\n序列 6: 论想钻研就别怕吃亏\n序列 7: 若想钻研就别蔑视亏\n序列 8: 落想钻研就别怕吃亏\n序列 9: 落想钻研就别怕吃亏\n序列 10: 若想钻研就别蔑视会",
+    "output": "若想钻研就别怕吃亏"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: chan zui bing gan gei ti che\n序列 2: chan zui bin gan gei ti che\n序列 3: chan zui ping gan gei ti che\n序列 4: chan zui ming gan gei ti che\n序列 5: chan zui bing gan gei ti chu\n序列 6: chan zui bing gan gei ci che\n序列 7: chan zui bin gan gei ti chu\n序列 8: chan zui bin gan gei ci che\n序列 9: chan zui ping gan gei ti chu\n序列 10: chan zui ping gan gei ci che\nTop K 汉字序列 (按联合概率排序):\n序列 1: 馋嘴饼干给你吃\n序列 2: 缠嘴饼干给你吃\n序列 3: 馋嘴饼干给你车\n序列 4: 馋嘴饼干给你车\n序列 5: 餐嘴饼干给你吃\n序列 6: 舱嘴饼干给你吃\n序列 7: 床嘴饼干给你吃\n序列 8: 馋嘴饼干给你出\n序列 9: 声嘴饼干给你吃\n序列 10: 贼嘴饼干给你吃",
+    "output": "馋嘴饼干给你吃"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: meng shang tou shuo er wu\n序列 2: meng shang tou ruo er wu\n序列 3: meng shang tou shuo er ma\n序列 4: meng shang tou shuo leng wu\n序列 5: meng shang tou shuo lun wu\n序列 6: meng shang tou ruo er ma\n序列 7: meng shang tou ruo leng wu\n序列 8: meng shang tou ruo lun wu\n序列 9: meng shang tou shuo er po\n序列 10: meng shang tou shuo leng ma\nTop K 汉字序列 (按联合概率排序):\n序列 1: 晚上跳双人舞\n序列 2: 茫上跳双人舞\n序列 3: 为上跳双人舞\n序列 4: 房上跳双人舞\n序列 5: 故上跳双人舞\n序列 6: 膀上跳双人舞\n序列 7: 迫上跳双人舞\n序列 8: 坡上跳双人舞\n序列 9: 包上跳双人舞\n序列 10: 物上跳双人舞",
+    "output": "晚上跳双人舞"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: xie dang wo feng cha jiu jin zhao hai ma\n序列 2: xie dang guo feng cha jiu jin zhao hai ma\n序列 3: xie dang wo feng chai jiu jin zhao hai ma\n序列 4: xie dang wo feng cha zong jin zhao hai ma\n序列 5: xie dang wo feng cha jiu jin zhou hai ma\n序列 6: xie dang wo feng shan jiu jin zhao hai ma\n序列 7: xie dang wo pen cha jiu jin zhao hai ma\n序列 8: xie dang wo feng cha jiu da zhao hai ma\n序列 9: xie dang guo feng chai jiu jin zhao hai ma\n序列 10: xie dang wo ang cha jiu jin zhao hai ma\nTop K 汉字序列 (按联合概率排序):\n序列 1: 想到刮风沙就紧张害怕\n序列 2: 鞋到刮风沙就紧张害怕\n序列 3: 箱到刮风沙就紧张害怕\n序列 4: 入到刮风沙就紧张害怕\n序列 5: 以到刮风沙就紧张害怕\n序列 6: 者到刮风沙就紧张害怕\n序列 7: 校到刮风沙就紧张害怕\n序列 8: 夜到刮风沙就紧张害怕\n序列 9: 叶到刮风沙就紧张害怕\n序列 10: 业到刮风沙就紧张害怕",
+    "output": "想到刮风沙就紧张害怕"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: ta xun cu pang yi shan ding\n序列 2: ta xun cu mang yi shan ding\n序列 3: ta xun cuo pang yi shan ding\n序列 4: ta xun cuo mang yi shan ding\n序列 5: ta xun cu pa yi shan ding\n序列 6: ta pin cu pang yi shan ding\n序列 7: ta xun cu kang yi shan ding\n序列 8: ta pin cu mang yi shan ding\n序列 9: ta xun cu pai yi shan ding\n序列 10: ta xun cu kuang yi shan ding\nTop K 汉字序列 (按联合概率排序):\n序列 1: 他迅速跑到山顶\n序列 2: 他迅速跑到山峰\n序列 3: 他迅速跑到山顶\n序列 4: 他迅速跑到山顶\n序列 5: 他迅速跑到山水\n序列 6: 他迅速跑到山寨\n序列 7: 他迅速跑到山坡\n序列 8: 他迅速旁到山顶\n序列 9: 他迅速茫到山顶\n序列 10: 他迅速排队山顶",
+    "output": "他迅速跑到山顶"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: huang zai de jing guang you xiang wo qian\n序列 2: huang zai de jing guang you xu wo qian\n序列 3: huang zai de dong guang you xiang wo qian\n序列 4: huang zai de dong guang you xu wo qian\n序列 5: ang zai de jing guang you xiang wo qian\n序列 6: ang zai de jing guang you xu wo qian\n序列 7: ang zai de dong guang you xiang wo qian\n序列 8: huang zai de jing guang you xue wo qian\n序列 9: ang zai de dong guang you xu wo qian\n序列 10: huang zai de dong guang you xue wo qian\nTop K 汉字序列 (按联合概率排序):\n序列 1: 黄色的灯光有些晃眼\n序列 2: 黄色的灯光有些晃眼\n序列 3: 黄色的灯光有许多少\n序列 4: 红色的灯光有些晃眼\n序列 5: 黄色的灯光有些晃眼\n序列 6: 黄色的灯光有许多少\n序列 7: 黄色的灯光有些晃眼\n序列 8: 红色的灯光有许多少\n序列 9: 红色的灯光有些晃眼\n序列 10: 黄色的灯光有很多鸟",
+    "output": "黄色的灯光有些晃眼"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: yu ji zao shi xiao peng shui\n序列 2: yu ji zao zi xiao peng shui\n序列 3: yu ji zao shi xiao pang shui\n序列 4: yu zen zao shi xiao peng shui\n序列 5: yu ji zao zi xiao pang shui\n序列 6: yu shun zao shi xiao peng shui\n序列 7: yu zen zao zi xiao peng shui\n序列 8: yu zen zao shi xiao pang shui\n序列 9: yu shun zao zi xiao peng shui\n序列 10: yu shun zao shi xiao pang shui\nTop K 汉字序列 (按联合概率排序):\n序列 1: 遇见三只小胖熊\n序列 2: 于见三只小胖熊\n序列 3: 雨见三只小胖熊\n序列 4: 宇见三只小胖熊\n序列 5: 遇见三只小胖熊\n序列 6: 遇见三只小胖熊\n序列 7: 遇见三只小朋友\n序列 8: 雨圾三只小胖熊\n序列 9: 宇圾三只小胖熊\n序列 10: 于圾三只小胖熊",
+    "output": "遇见三只小胖熊"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: song yao ke yi long zuo le li\n序列 2: song zei ke yi long zuo le li\n序列 3: song yao ke yi long zuo le liao\n序列 4: song yao ke yi long zuo shan li\n序列 5: song zei ke yi long zuo le liao\n序列 6: song zei ke yi long zuo shan li\n序列 7: song ye ke yi long zuo le li\n序列 8: song gei ke yi long zuo le li\n序列 9: song nin ke yi long zuo le li\n序列 10: song yao ke yi yin zuo le li\nTop K 汉字序列 (按联合概率排序):\n序列 1: 桑叶可以用作染料\n序列 2: 造叶可以用作染料\n序列 3: 箱叶可以用作染料\n序列 4: 恕叶可以用作染料\n序列 5: 束叶可以用作染料\n序列 6: 输叶可以用作染料\n序列 7: 书叶可以用作染料\n序列 8: 硬叶可以用作染料\n序列 9: 兴叶可以用作染料\n序列 10: 校叶可以用作染料",
+    "output": "桑叶可以用作染料"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: ta me chang chao na wan ca\n序列 2: ta me chan chao na wan ca\n序列 3: ta mao chang chao na wan ca\n序列 4: ta me qin chao na wan ca\n序列 5: ta me zhang chao na wan ca\n序列 6: ta mao chan chao na wan ca\n序列 7: ta me chuang chao na wan ca\n序列 8: ta mao qin chao na wan ca\n序列 9: ta me zhai chao na wan ca\n序列 10: ta me chuan chao na wan ca\nTop K 汉字序列 (按联合概率排序):\n序列 1: 他忙着炒那盘菜\n序列 2: 他忙着炒那条寨\n序列 3: 他忙着炒那条枪\n序列 4: 他忙着炒那条计\n序列 5: 他忙着炒那条圾\n序列 6: 他忙着炒那条琴\n序列 7: 他忙着炒那条床\n序列 8: 他忙着炒那条舱\n序列 9: 他忙着炒那条睛\n序列 10: 他忙着炒那条警",
+    "output": "他忙着炒那盘菜"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: cong zai bu yi zai jia jia\n序列 2: cong zai bu ya zai jia jia\n序列 3: cang zai bu yi zai jia jia\n序列 4: cang zai bu ya zai jia jia\n序列 5: cong zai bu yao zai jia jia\n序列 6: cong zai bu yi zai jia jiao\n序列 7: cong zai bu ya zai jia jiao\n序列 8: cang zai bu yao zai jia jia\n序列 9: cong zai bu na zai jia jia\n序列 10: cang zai bu yi zai jia jiao\nTop K 汉字序列 (按联合概率排序):\n序列 1: 从此不要再打架\n序列 2: 舱此不要再打架\n序列 3: 从此不要再打架\n序列 4: 从此不要再打架\n序列 5: 从此不要再打针\n序列 6: 舱师不要再打架\n序列 7: 贫穷不要再打架\n序列 8: 老师不要再打架\n序列 9: 平此不要再打架\n序列 10: 瓶此不要再打架",
+    "output": "从此不要再打架"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: jing ru na zhou cong jing zi\n序列 2: jing ru na zhao cong jing zi\n序列 3: jing ru miao zhou cong jing zi\n序列 4: jing ru na zhou cong jing ying\n序列 5: jing ru na zhou cong zheng zi\n序列 6: jing ru liang zhou cong jing zi\n序列 7: qing ru na zhou cong jing zi\n序列 8: jing ru na zhou cong jing jing\n序列 9: jing ru na zhou song jing zi\n序列 10: jing ru miao zhao cong jing zi\nTop K 汉字序列 (按联合概率排序):\n序列 1: 庆祝两周岁生日\n序列 2: 静祝两周岁生日\n序列 3: 京祝两周岁生日\n序列 4: 睛祝两周岁生日\n序列 5: 警祝两周岁生日\n序列 6: 庆祝两周三只子\n序列 7: 庆祝两周三只硬\n序列 8: 庆祝两周岁生日\n序列 9: 庆祝两周三只睛\n序列 10: 庆祝两周三只警",
+    "output": "庆祝两周岁生日"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: ta zheng zai rui bie wu ni\n序列 2: ta zheng zai chui bie wu ni\n序列 3: ta zheng zai jue bie wu ni\n序列 4: ta zheng zai zhuang bie wu ni\n序列 5: ta zheng zai rui bie wu cuan\n序列 6: ta zheng zei rui bie wu ni\n序列 7: ta zheng zai rui bie mu ni\n序列 8: ta zheng zai mian bie wu ni\n序列 9: ta zheng zai jie bie wu ni\n序列 10: ta zheng zai chui bie wu cuan\nTop K 汉字序列 (按联合概率排序):\n序列 1: 他正在准备午餐\n序列 2: 他正在准备午餐\n序列 3: 他正在准备午餐\n序列 4: 打针在准备午餐\n序列 5: 造正在准备午餐\n序列 6: 这正在准备午餐\n序列 7: 队正在准备午餐\n序列 8: 票正在准备午餐\n序列 9: 头正在准备午餐\n序列 10: 架正在准备午餐",
+    "output": "他正在准备午餐"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: er yi geng le wo hei zai de lve jing\n序列 2: hen yi geng le wo hei zai de lve jing\n序列 3: er yi geng le wo hei zai de er jing\n序列 4: hen yi geng le wo hei zai de er jing\n序列 5: gei yi geng le wo hei zai de lve jing\n序列 6: er yi geng le wo hei se de lve jing\n序列 7: ming yi geng le wo hei zai de lve jing\n序列 8: hen yi geng le wo hei se de lve jing\n序列 9: gei yi geng le wo hei zai de er jing\n序列 10: er yi geng le wo hei zai de lve deng\nTop K 汉字序列 (按联合概率排序):\n序列 1: 黑夜给了我黑色的眼睛\n序列 2: 尔夜给了我黑色的眼睛\n序列 3: 命夜给了我黑色的眼睛\n序列 4: 何夜给了我黑色的眼睛\n序列 5: 为夜给了我黑色的眼睛\n序列 6: 虹夜给了我黑色的眼睛\n序列 7: 黑夜给了我黑色的眼睛\n序列 8: 以夜给了我黑色的眼睛\n序列 9: 黑夜给了我黑色的眼睛\n序列 10: 妹夜给了我黑色的眼睛",
+    "output": "黑夜给了我黑色的眼睛"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: ta zai shui hui hun ri zi\n序列 2: ta zai shui hui pen ri zi\n序列 3: ta zai shui hui kun ri zi\n序列 4: ta zai shui hui fen ri zi\n序列 5: ta zai shui hui hun re zi\n序列 6: ta zai shui huang hun ri zi\n序列 7: ta zai shui hui pen re zi\n序列 8: ta zai shui huang pen ri zi\n序列 9: ta zai shui hui kun re zi\n序列 10: ta zai shui huang kun ri zi\nTop K 汉字序列 (按联合概率排序):\n序列 1: 他在社会混日子\n序列 2: 军在社会混日子\n序列 3: 窜在社会混日子\n序列 4: 正在社会混日子\n序列 5: 住在社会混日子\n序列 6: 别在社会混日子\n序列 7: 放在社会混日子\n序列 8: 造在社会混日子\n序列 9: 他搜身会混日子\n序列 10: 他在佛寺混日子",
+    "output": "他在社会混日子"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: pao zhai zuo wo de po tian hao\n序列 2: pao zhai zuo wo de po jia hao\n序列 3: pao zhai zuo shui de po tian hao\n序列 4: pao zhai zi wo de po tian hao\n序列 5: pao zhai zuo zai de po tian hao\n序列 6: pao zhai zuo chuan de po tian hao\n序列 7: pao zhai zuo wo bie po tian hao\n序列 8: pao zhai zuo wo de po niang hao\n序列 9: pao zhai zuo shui de po jia hao\n序列 10: pao zhai zi wo de po jia hao\nTop K 汉字序列 (按联合概率排序):\n序列 1: 起来自哪个方向哦\n序列 2: 炮桌子转个方向哦\n序列 3: 炮来自哪个方向哦\n序列 4: 心来自哪个方向哦\n序列 5: 把桌子转个方向哦\n序列 6: 用来自哪个方向哦\n序列 7: 传来自哪个方向哦\n序列 8: 搬来自哪个方向哦\n序列 9: 出来自哪个方向哦\n序列 10: 近来自哪个方向哦",
+    "output": "把桌子转个方向哦"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: xie xia ou er ju wan he de\n序列 2: xie xia ou er ju men he de\n序列 3: xie xia ou er ju wan po de\n序列 4: xie xia ou er ju fen he de\n序列 5: xie xia ou er ju men po de\n序列 6: xie xiao ou er ju wan he de\n序列 7: xie xia ou er di wan he de\n序列 8: xie xia ou er ju fan he de\n序列 9: xie xia ou er tu wan he de\n序列 10: xie xia ou er ju wan e de\nTop K 汉字序列 (按联合概率排序):\n序列 1: 学校偶尔举办活动\n序列 2: 学校偶尔举办活动\n序列 3: 鞋校偶尔举办活动\n序列 4: 鞋校偶尔举办活动\n序列 5: 切校偶尔举办活动\n序列 6: 且校偶尔举办活动\n序列 7: 切校偶尔举办活动\n序列 8: 且校偶尔举办活动\n序列 9: 鞋下偶尔举办活动\n序列 10: 学校偶尔举办活动",
+    "output": "学校偶尔举办活动"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: han wo shun lun lian ming pao qi\n序列 2: han wo shun luan lian ming pao qi\n序列 3: han wo shun neng lian ming pao qi\n序列 4: han wo shun lun lian ming ba qi\n序列 5: han wo shun luan lian ming ba qi\n序列 6: han wo shun lve lian ming pao qi\n序列 7: han wo shun neng lian ming ba qi\n序列 8: han wo shan lun lian ming pao qi\n序列 9: han wo shun lun lie ming pao qi\n序列 10: han wo sheng lun lian ming pao qi\nTop K 汉字序列 (按联合概率排序):\n序列 1: 饭后顺路练乒乓球\n序列 2: 汉后顺路练乒乓球\n序列 3: 欢后顺路练乒乓球\n序列 4: 缠后顺路练乒乓球\n序列 5: 餐后顺路练乒乓球\n序列 6: 何后顺路练乒乓球\n序列 7: 顶后顺路练乒乓球\n序列 8: 定后顺路练乒乓球\n序列 9: 鞋后顺路练乒乓球\n序列 10: 壮后顺路练乒乓球",
+    "output": "饭后顺路练乒乓球"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: kuo feng si nie chuang luo wo pie\n序列 2: ke feng si nie chuang luo wo pie\n序列 3: kao feng si nie chuang luo wo pie\n序列 4: wo feng si nie chuang luo wo pie\n序列 5: guo feng si nie chuang luo wo pie\n序列 6: kuo feng si nie chuang luo wo qian\n序列 7: ke feng si nie chuang luo wo qian\n序列 8: kuo feng si nie chuang nuo wo pie\n序列 9: kuo po si nie chuang luo wo pie\n序列 10: kuo feng si nin chuang luo wo pie\nTop K 汉字序列 (按联合概率排序):\n序列 1: 狂风肆虐吹落瓦片\n序列 2: 阔风肆虐吹落瓦片\n序列 3: 课风肆虐吹落瓦片\n序列 4: 客风肆虐吹落瓦片\n序列 5: 果风肆虐吹落瓦片\n序列 6: 国风肆虐吹落瓦片\n序列 7: 块风肆虐吹落瓦片\n序列 8: 箱风肆虐吹落瓦片\n序列 9: 况风肆虐吹落瓦片\n序列 10: 约风肆虐吹落瓦片",
+    "output": "狂风肆虐吹落瓦片"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: qing bie you xu de sun guo le zeng\n序列 2: qing bie you ping de sun guo le zeng\n序列 3: qing bie you xu de sun guo zi zeng\n序列 4: qing bie you ping de sun guo zi zeng\n序列 5: qing bie you xu de sun guo li zeng\n序列 6: qing bie you ping de sun guo li zeng\n序列 7: qing bie you xu de sun guo le ding\n序列 8: qing bie you xu de xuan guo le zeng\n序列 9: qing bie you ping de sun guo le ding\n序列 10: qing bie you ping de xuan guo le zeng\nTop K 汉字序列 (按联合概率排序):\n序列 1: 前面有许多悬挂路灯\n序列 2: 前面有许多悬挂路灯\n序列 3: 对面有许多悬挂路灯\n序列 4: 对面有许多悬挂路灯\n序列 5: 庆祝有许多悬挂路灯\n序列 6: 情况有许多悬挂路灯\n序列 7: 庆祝有许多悬挂路灯\n序列 8: 情况有许多悬挂路灯\n序列 9: 轻蔑批评多悬挂路灯\n序列 10: 酒店有许多悬挂路灯",
+    "output": "前面有许多悬挂路灯"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: wo de zai ding le\n序列 2: wo de zai diu le\n序列 3: pa de zai ding le\n序列 4: pa de zai diu le\n序列 5: wo de zai diao le\n序列 6: pa de zai diao le\n序列 7: wo zai zai ding le\n序列 8: wo zai zai diu le\n序列 9: pa zai zai ding le\n序列 10: wo ze zai ding le\nTop K 汉字序列 (按联合概率排序):\n序列 1: 毛贼追丢了\n序列 2: 包贼追丢了\n序列 3: 炮贼追丢了\n序列 4: 饺贼追丢了\n序列 5: 毛贼追丢了\n序列 6: 迫贼追丢了\n序列 7: 坡贼追丢了\n序列 8: 汉贼追丢了\n序列 9: 气贼追丢了\n序列 10: 昂首追丢了",
+    "output": "毛贼追丢了"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: gan seng zhai zhe ta zai jing die que wo shi\n序列 2: gan seng zhai zhe ta zai jing die que huo shi\n序列 3: gan seng zhai zhe ta zai jin die que wo shi\n序列 4: gan seng zhai zhe ta zai jin die que huo shi\n序列 5: you seng zhai zhe ta zai jing die que wo shi\n序列 6: you seng zhai zhe ta zai jing die que huo shi\n序列 7: you seng zhai zhe ta zai jin die que wo shi\n序列 8: you seng zhai zhe ta zai jin die que huo shi\n序列 9: ta seng zhai zhe ta zai jing die que wo shi\n序列 10: pie seng zhai zhe ta zai jing die que wo shi\nTop K 汉字序列 (按联合概率排序):\n序列 1: 高僧拽着他走进龙泉佛寺\n序列 2: 高僧拽着他走进龙泉佛寺\n序列 3: 友僧拽着他走进龙泉佛寺\n序列 4: 友僧拽着他走进龙泉佛寺\n序列 5: 约僧拽着他走进龙泉佛寺\n序列 6: 约僧拽着他走进龙泉佛寺\n序列 7: 宇僧拽着他走进龙泉佛寺\n序列 8: 雨僧拽着他走进龙泉佛寺\n序列 9: 于僧拽着他走进龙泉佛寺\n序列 10: 牙僧拽着他走进龙泉佛寺",
+    "output": "高僧拽着他走进龙泉佛寺"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: shang kao yao zhe yi fei sheng\n序列 2: shang kuai yao zhe yi fei sheng\n序列 3: shang kao you zhe yi fei sheng\n序列 4: shang kai yao zhe yi fei sheng\n序列 5: shang kao yao ri yi fei sheng\n序列 6: shang kuai you zhe yi fei sheng\n序列 7: shang kao yao rui yi fei sheng\n序列 8: shang kuai yao ri yi fei sheng\n序列 9: shang kuai yao rui yi fei sheng\n序列 10: shang kao yao zhe yi wei sheng\nTop K 汉字序列 (按联合概率排序):\n序列 1: 烧烤要注意卫生\n序列 2: 烧烤要注意卫生\n序列 3: 伤烤要注意卫生\n序列 4: 伤烤要注意卫生\n序列 5: 实烤要注意卫生\n序列 6: 师烤要注意卫生\n序列 7: 视烤要注意卫生\n序列 8: 适烤要注意卫生\n序列 9: 首烤要注意卫生\n序列 10: 实烤要注意卫生",
+    "output": "烧烤要注意卫生"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: mei meng tong lu zhen kai shen\n序列 2: bu meng tong lu zhen kai shen\n序列 3: mei beng tong lu zhen kai shen\n序列 4: bu beng tong lu zhen kai shen\n序列 5: mei meng tong ta zhen kai shen\n序列 6: bu meng tong ta zhen kai shen\n序列 7: mei beng tong ta zhen kai shen\n序列 8: wai meng tong lu zhen kai shen\n序列 9: bu beng tong ta zhen kai shen\n序列 10: mei meng duan lu zhen kai shen\nTop K 汉字序列 (按联合概率排序):\n序列 1: 干些痛驼真开心\n序列 2: 蹦蹦跳跳真开心\n序列 3: 蹦蹦跳跳真开心\n序列 4: 美蹦跳跳真开心\n序列 5: 妹蹦跳跳真开心\n序列 6: 美盟友驼真开心\n序列 7: 妹盟友驼真开心\n序列 8: 步蹦跳跳真开心\n序列 9: 步盟友驼真开心\n序列 10: 没捏造驼真开心",
+    "output": "蹦蹦跳跳真开心"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: mu pian zhou fang te bie dui\n序列 2: mu bian zhou fang te bie dui\n序列 3: mu pian zhou fang te bie ru\n序列 4: mu bian zhou fang te bie ru\n序列 5: nuo pian zhou fang te bie dui\n序列 6: nuo bian zhou fang te bie dui\n序列 7: mu dian zhou fang te bie dui\n序列 8: nuo pian zhou fang te bie ru\n序列 9: nuo bian zhou fang te bie ru\n序列 10: mu dian zhou fang te bie ru\nTop K 汉字序列 (按联合概率排序):\n序列 1: 路边楼房特别多\n序列 2: 路边楼房特别好\n序列 3: 宇边楼房特别多\n序列 4: 于边楼房特别多\n序列 5: 雨边楼房特别多\n序列 6: 旁的楼房特别多\n序列 7: 茫边楼房特别多\n序列 8: 路边楼房特别多\n序列 9: 路边楼房特别多\n序列 10: 囊边楼房特别多",
+    "output": "路边楼房特别多"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: shen lin nong pang bing xuan duo\n序列 2: shen lin sao pang bing xuan duo\n序列 3: shen ling nong pang bing xuan duo\n序列 4: shen lin nong pang bing xue duo\n序列 5: shen lin nong pang bing xia duo\n序列 6: shen lin nong pang ding xuan duo\n序列 7: shen ling sao pang bing xuan duo\n序列 8: shen lin sao pang bing xue duo\n序列 9: shen ling nong pang bing xue duo\n序列 10: shen lin sao pang bing xia duo\nTop K 汉字序列 (按联合概率排序):\n序列 1: 森林苍茫冰雪多\n序列 2: 身林苍茫冰雪多\n序列 3: 声林苍茫冰雪多\n序列 4: 森林苍茫冰雪多\n序列 5: 森林苍茫冰雪多\n序列 6: 禁林苍茫冰雪多\n序列 7: 校林苍茫冰雪多\n序列 8: 森林苍茫冰雪多\n序列 9: 箱林苍茫冰雪多\n序列 10: 书林苍茫冰雪多",
+    "output": "森林苍茫冰雪多"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: zu nian qu wo hao nang jiao hen shui\n序列 2: zu nian qu wo hao wang jiao hen shui\n序列 3: zu neng qu wo hao nang jiao hen shui\n序列 4: zu nan qu wo hao nang jiao hen shui\n序列 5: zu neng qu wo hao wang jiao hen shui\n序列 6: zu nan qu wo hao wang jiao hen shui\n序列 7: jun nian qu wo hao nang jiao hen shui\n序列 8: zu nian qu wo hao nang zhao hen shui\n序列 9: jun nian qu wo hao wang jiao hen shui\n序列 10: zu nian qu wo hao zong jiao hen shui\nTop K 汉字序列 (按联合概率排序):\n序列 1: 今年去武汉度假很晒\n序列 2: 今年去武汉度假很疼\n序列 3: 今年去武汉度假很多\n序列 4: 禁年去武汉度假很晒\n序列 5: 处年去武汉度假很晒\n序列 6: 入年去武汉度假很晒\n序列 7: 音年去武汉度假很晒\n序列 8: 故年去武汉度假很晒\n序列 9: 于年去武汉度假很晒\n序列 10: 宇年去武汉度假很晒",
+    "output": "今年去武汉度假很晒"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: ang shang ruo chu wo qi\n序列 2: ang shi ruo chu wo qi\n序列 3: ang shang ruo jue wo qi\n序列 4: ang shang ruo chu mei qi\n序列 5: ang xiang ruo chu wo qi\n序列 6: ang shi ruo jue wo qi\n序列 7: ang shi ruo chu mei qi\n序列 8: ang shang ruo chong wo qi\n序列 9: ang shang ruo chuan wo qi\n序列 10: ang shang ruo jue mei qi\nTop K 汉字序列 (按联合概率排序):\n序列 1: 昂首追逐梦想\n序列 2: 昂首追逐梦想\n序列 3: 昂首追逐梦想\n序列 4: 航首追逐梦想\n序列 5: 昂首书出门票\n序列 6: 昂首喷出门票\n序列 7: 昂首钻出门票\n序列 8: 昂首孙出门票\n序列 9: 昂首追逐门票\n序列 10: 昂首睡觉前面",
+    "output": "昂首追逐梦想"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: lang weng yu kong tiao chuan feng le\n序列 2: lang beng yu kong tiao chuan feng le\n序列 3: lang weng yu kong qiu chuan feng le\n序列 4: lang weng yu kong tiao chuan fan le\n序列 5: lang weng yu kong tiao chuan fang le\n序列 6: lang beng yu kong qiu chuan feng le\n序列 7: lang beng yu kong tiao chuan fan le\n序列 8: lang beng yu kong tiao chuan fang le\n序列 9: lang weng yu kong tiao cheng feng le\n序列 10: lang weng yu kong qiu chuan fan le\nTop K 汉字序列 (按联合概率排序):\n序列 1: 老翁用空调吹风呢\n序列 2: 老翁用空调吹风呢\n序列 3: 都不用空调吹风呢\n序列 4: 老翁用空调吹风呢\n序列 5: 切翁用空调吹风呢\n序列 6: 且翁用空调吹风呢\n序列 7: 钱则用空调吹风呢\n序列 8: 差不用空调吹风呢\n序列 9: 包翁用空调吹风呢\n序列 10: 饺翁用空调吹风呢",
+    "output": "老翁用空调吹风呢"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: ta jin de tian ze yi lai qi lu le\n序列 2: ta jin le tian ze yi lai qi lu le\n序列 3: ta jin de tian jie yi lai qi lu le\n序列 4: ta jin le tian jie yi lai qi lu le\n序列 5: ta jin de tian ze ya lai qi lu le\n序列 6: ta jin na tian ze yi lai qi lu le\n序列 7: ta jin le tian ze ya lai qi lu le\n序列 8: ta jin de tian ze yao lai qi lu le\n序列 9: ta jin de tian jie ya lai qi lu le\n序列 10: ta jin de tian ze you lai qi lu le\nTop K 汉字序列 (按联合概率排序):\n序列 1: 他捐的钱则用来修路了\n序列 2: 拴着的钱则用来修路了\n序列 3: 唱歌的钱则用来修路了\n序列 4: 宁静的钱则用来修路了\n序列 5: 驼着的钱则用来修路了\n序列 6: 落着的钱则用来修路了\n序列 7: 林着的钱则用来修路了\n序列 8: 俩着的钱则用来修路了\n序列 9: 来捐的钱则用来修路了\n序列 10: 炮着的钱则用来修路了",
+    "output": "他捐的钱则用来修路了"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: wo bu cai le zhe yan\n序列 2: wo bu cai na zhe yan\n序列 3: wo bu de le zhe yan\n序列 4: wo bu jue le zhe yan\n序列 5: wo bu de na zhe yan\n序列 6: wo bu jue na zhe yan\n序列 7: wo bu cai le zhe ye\n序列 8: wo bu jia le zhe yan\n序列 9: wo bo cai le zhe yan\n序列 10: wo bu ta le zhe yan\nTop K 汉字序列 (按联合概率排序):\n序列 1: 我们家扛着眼\n序列 2: 伯伯眨了眨眼\n序列 3: 不大家扛着眼\n序列 4: 我们条拴着眼\n序列 5: 我们学忙着眼\n序列 6: 进步家扛着眼\n序列 7: 我们泽了眨眼\n序列 8: 旁的家扛着眼\n序列 9: 散步家扛着眼\n序列 10: 我们奇眯着眼",
+    "output": "伯伯眨了眨眼"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: ta gou xing de zhe qi lai\n序列 2: ta gong xing de zhe qi lai\n序列 3: ta gou xing de zhan qi lai\n序列 4: ta gou xing de zhen qi lai\n序列 5: ta gou xing na zhe qi lai\n序列 6: ta gou shen de zhe qi lai\n序列 7: ta gong xing de zhan qi lai\n序列 8: ta gong xing de zhen qi lai\n序列 9: ta gou xing de zhe ji lai\n序列 10: ta gou xie de zhe qi lai\nTop K 汉字序列 (按联合概率排序):\n序列 1: 他高兴地站起来\n序列 2: 他帅气地站起来\n序列 3: 他高兴地站起来\n序列 4: 他高兴面站起来\n序列 5: 他高兴地站起床\n序列 6: 小狗兴地站起来\n序列 7: 他高兴易站起来\n序列 8: 他高兴以站起来\n序列 9: 落高兴地站起来\n序列 10: 泽国兴地站起来",
+    "output": "他高兴地站起来"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: zhe tian pou lve hen zhe ye hua\n序列 2: zhe pian pou lve hen zhe ye hua\n序列 3: zhe pin pou lve hen zhe ye hua\n序列 4: zhe tian pou lve hen zhe ye wo\n序列 5: zhe tian pou lve hen zhe lie hua\n序列 6: zhe pian pou lve hen zhe ye wo\n序列 7: zhe pian pou lve hen zhe lie hua\n序列 8: zhe pin pou lve hen zhe ye wo\n序列 9: zhe pin pou lve hen zhe lie hua\n序列 10: zhe tian pou lve hen zhe ye huo\nTop K 汉字序列 (按联合概率排序):\n序列 1: 这篇谋略很锐利哦\n序列 2: 者篇谋略很锐利哦\n序列 3: 这篇谋略很容易吗\n序列 4: 这篇谋略很锐利花\n序列 5: 这篇谋略很锐利画\n序列 6: 这篇谋略很疼烈火\n序列 7: 这篇谋略很锐利火\n序列 8: 这篇谋略很锐利火\n序列 9: 这篇谋略很锐利哦\n序列 10: 这篇谋略很锐目行",
+    "output": "这篇谋略很锐利哦"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: shei xiang bu cang men nian you yao qi\n序列 2: xie xiang bu cang men nian you yao qi\n序列 3: shei xiang bu cai men nian you yao qi\n序列 4: xie xiang bu cai men nian you yao qi\n序列 5: shei xiang bu zong men nian you yao qi\n序列 6: shei xiang bu cang men nian you yao xi\n序列 7: xie xiang bu zong men nian you yao qi\n序列 8: shei xiang bu ceng men nian you yao qi\n序列 9: xie xiang bu cang men nian you yao xi\n序列 10: shei xiang bu cai men nian you yao xi\nTop K 汉字序列 (按联合概率排序):\n序列 1: 学校不能玩电脑游戏\n序列 2: 学校不能玩电脑游戏\n序列 3: 鞋校不能玩电脑游戏\n序列 4: 鞋校不能玩电脑游戏\n序列 5: 学校不能玩电脑游戏\n序列 6: 学校不能玩电脑游戏\n序列 7: 雪校不能玩电脑游戏\n序列 8: 险校不能玩电脑游戏\n序列 9: 鞋箱不能玩电脑游戏\n序列 10: 鞋向不能玩电脑游戏",
+    "output": "学校不能玩电脑游戏"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: tuan lin chang qu zheng he shi\n序列 2: tuan ping chang qu zheng he shi\n序列 3: tuan lin chang dui zheng he shi\n序列 4: tuan ping chang dui zheng he shi\n序列 5: tuan tuo chang qu zheng he shi\n序列 6: tuan lin chang dong zheng he shi\n序列 7: tuan ping chang dong zheng he shi\n序列 8: tuan tuo chang dui zheng he shi\n序列 9: tuan tuo chang dong zheng he shi\n序列 10: tuan lin zhou qu zheng he shi\nTop K 汉字序列 (按联合概率排序):\n序列 1: 短裙长度正合适\n序列 2: 园林长度正合适\n序列 3: 团队长度正合适\n序列 4: 贵裙长度正合适\n序列 5: 单结账度正合适\n序列 6: 短裙长度正合适\n序列 7: 块裙长度正合适\n序列 8: 花瓶长度正合适\n序列 9: 短裙长度正合适\n序列 10: 票裙长度正合适",
+    "output": "短裙长度正合适"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: mei zhuai wo zan hao\n序列 2: mei jue wo zan hao\n序列 3: mei juan wo zan hao\n序列 4: mei zhuai wo jian hao\n序列 5: mei jue wo jian hao\n序列 6: mei zhuai wo jin hao\n序列 7: mei jue wo jin hao\n序列 8: mei zhua wo zan hao\n序列 9: mei juan wo jian hao\n序列 10: nve zhuai wo zan hao\nTop K 汉字序列 (按联合概率排序):\n序列 1: 别拽我肩膀\n序列 2: 美拽我肩膀\n序列 3: 妹拽我肩膀\n序列 4: 约拽我肩膀\n序列 5: 雪拽我肩膀\n序列 6: 命拽我肩膀\n序列 7: 非拽我肩膀\n序列 8: 别拽我肩膀\n序列 9: 业拽我肩膀\n序列 10: 叶拽我肩膀",
+    "output": "别拽我肩膀"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: nuo lun ding ren you jiong po\n序列 2: nuo lun dong ren you jiong po\n序列 3: nuo lun diu ren you jiong po\n序列 4: nuo min ding ren you jiong po\n序列 5: lv lun ding ren you jiong po\n序列 6: nuo lun ding ren you jiong pou\n序列 7: nuo min dong ren you jiong po\n序列 8: nuo min diu ren you jiong po\n序列 9: nuo lun miu ren you jiong po\n序列 10: lv lun dong ren you jiong po\nTop K 汉字序列 (按联合概率排序):\n序列 1: 谬论丢人又窘迫\n序列 2: 命论丢人又窘迫\n序列 3: 瓶论丢人又窘迫\n序列 4: 平论丢人又窘迫\n序列 5: 评论丢人又窘迫\n序列 6: 落论丢人又窘迫\n序列 7: 钮论丢人又窘迫\n序列 8: 尬论丢人又窘迫\n序列 9: 块论丢人又窘迫\n序列 10: 怨论丢人又窘迫",
+    "output": "谬论丢人又窘迫"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: diu jue fu gai sheng feng\n序列 2: diu jue pou gai sheng feng\n序列 3: diu jue fu gai shen feng\n序列 4: diu jue ku gai sheng feng\n序列 5: diu jue pou gai shen feng\n序列 6: diu jue pu gai sheng feng\n序列 7: diu jue ku gai shen feng\n序列 8: diu qu fu gai sheng feng\n序列 9: diu jue pu gai shen feng\n序列 10: diu jue fou gai sheng feng\nTop K 汉字序列 (按联合概率排序):\n序列 1: 冰雪覆盖山峰\n序列 2: 总算覆盖山峰\n序列 3: 友雪覆盖山峰\n序列 4: 流泪覆盖山峰\n序列 5: 果雪覆盖山峰\n序列 6: 国雪覆盖山峰\n序列 7: 酒店覆盖山峰\n序列 8: 游戏覆盖山峰\n序列 9: 邮票覆盖山峰\n序列 10: 定雪覆盖山峰",
+    "output": "冰雪覆盖山峰"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: ta chuan gan keng pin ming wo tian wo zhou\n序列 2: ta chuan gan keng pin ming wo tian wo qi\n序列 3: ta chuan gan keng pin ming wo tian wo se\n序列 4: ta chuan gan keng pin ming wo tian wo jun\n序列 5: ta chuan gan kun pin ming wo tian wo zhou\n序列 6: ta chuan gan keng pin ming wo tian wo ci\n序列 7: ta chuan gan men pin ming wo tian wo zhou\n序列 8: ta chuan gan kun pin ming wo tian wo qi\n序列 9: ta chuan gan men pin ming wo tian wo qi\n序列 10: ta chuan gan keng pin ming wo tian wo zi\nTop K 汉字序列 (按联合概率排序):\n序列 1: 他踹开门拼命往前跑去\n序列 2: 他踹开门拼命往前面包\n序列 3: 他踹开门拼命往前看咯\n序列 4: 他踹开门拼命我前跑去\n序列 5: 他踹开门拼命往前看好\n序列 6: 他踹开门拼命我肩膀色\n序列 7: 他踹开门拼命我肩膀子\n序列 8: 他踹开门拼命我肩膀醋\n序列 9: 他踹开门拼命我肩膀醋\n序列 10: 他踹开门拼命我天你吃",
+    "output": "他踹开门拼命往前跑去"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: zhe ge ceng huan shi ren jing zhu\n序列 2: zhe ge zei huan shi ren jing zhu\n序列 3: zhe ge ceng hai shi ren jing zhu\n序列 4: zhe ge ceng huan shi ren jing bu\n序列 5: zhe ge ceng huan shi ren ding zhu\n序列 6: zhe ge ceng ang shi ren jing zhu\n序列 7: zhe ge ceng gei shi ren jing zhu\n序列 8: zhe ha ceng huan shi ren jing zhu\n序列 9: zhe ge zei hai shi ren jing zhu\n序列 10: zhe ge zei huan shi ren jing bu\nTop K 汉字序列 (按联合概率排序):\n序列 1: 骄傲怎会使人进步\n序列 2: 者傲怎会使人进步\n序列 3: 骄傲怎会使人进步\n序列 4: 饺傲怎会使人进步\n序列 5: 造傲怎会使人进步\n序列 6: 水平怎会使人进步\n序列 7: 骄傲怎会使人进步\n序列 8: 唱歌的确实人进步\n序列 9: 这个锦囊使人进步\n序列 10: 者歌怎会使人进步",
+    "output": "骄傲怎会使人进步"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: sa xu geng wo dao zao cang li you shua zheng zhi\n序列 2: sa xu gen wo dao zao cang li you shua zheng zhi\n序列 3: sa xu geng wo dao zao zong li you shua zheng zhi\n序列 4: sa shuan geng wo dao zao cang li you shua zheng zhi\n序列 5: si xu geng wo dao zao cang li you shua zheng zhi\n序列 6: sa xu geng wo dao zao cang li you sao zheng zhi\n序列 7: sa xu gen wo dao zao zong li you shua zheng zhi\n序列 8: sao xu geng wo dao zao cang li you shua zheng zhi\n序列 9: sa xu geng wo da zao cang li you shua zheng zhi\n序列 10: xiao xu geng wo dao zao cang li you shua zheng zhi\nTop K 汉字序列 (按联合概率排序):\n序列 1: 桑树根旁的草丛里有虫钻出\n序列 2: 寺树根旁的草丛里有虫钻出\n序列 3: 校树根旁的草丛里有虫钻出\n序列 4: 速树根旁的草丛里有虫钻出\n序列 5: 箱树根旁的草丛里有虫钻出\n序列 6: 洒窗户旁的草丛里有虫钻出\n序列 7: 所树根旁的草丛里有虫钻出\n序列 8: 桑树根旁的草丛里有七种日\n序列 9: 想到坑里的草丛里有虫钻出\n序列 10: 入树根旁的草丛里有虫钻出",
+    "output": "桑树根旁的草丛里有虫钻出"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: mou po qiong dian zu\n序列 2: mou po qiong dian cu\n序列 3: mei po qiong dian zu\n序列 4: pao po qiong dian zu\n序列 5: mei po qiong dian cu\n序列 6: pao po qiong dian cu\n序列 7: mou po qiong dian qi\n序列 8: mou po jiao dian zu\n序列 9: mou po chang dian zu\n序列 10: pa po qiong dian zu\nTop K 汉字序列 (按联合概率排序):\n序列 1: 外婆常酿醋\n序列 2: 外婆常酿醋\n序列 3: 妹婆常酿醋\n序列 4: 美婆常酿醋\n序列 5: 妹婆常酿醋\n序列 6: 美婆常酿醋\n序列 7: 炮婆常酿醋\n序列 8: 炮婆常酿醋\n序列 9: 划婆常酿醋\n序列 10: 化婆常酿醋",
+    "output": "外婆常酿醋"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: chi wen qie gua diao cang huo\n序列 2: chi wen qie gua diao cang o\n序列 3: chi wen qie wo diao cang huo\n序列 4: chi wen qie wo diao cang o\n序列 5: chi wen qian gua diao cang huo\n序列 6: chi wen qian gua diao cang o\n序列 7: chi wen zei gua diao cang huo\n序列 8: chi wen qian wo diao cang huo\n序列 9: chi wen qie gua diao cang gao\n序列 10: chi wen zei gua diao cang o\nTop K 汉字序列 (按联合概率排序):\n序列 1: 出门前关掉窗户\n序列 2: 输门前关掉窗户\n序列 3: 书门前关掉窗户\n序列 4: 恕门前关掉窗户\n序列 5: 束门前关掉窗户\n序列 6: 出门前关掉窗台\n序列 7: 处门前关掉窗户\n序列 8: 视门前关掉窗户\n序列 9: 师门前关掉窗户\n序列 10: 实门前关掉窗户",
+    "output": "出门前关掉窗户"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: hao li jiu shi er tong xie\n序列 2: hao li jia shi er tong xie\n序列 3: hao li you shi er tong xie\n序列 4: hao li zao shi er tong xie\n序列 5: hao die jiu shi er tong xie\n序列 6: hao li jian shi er tong xie\n序列 7: hao li ren shi er tong xie\n序列 8: hao nie jiu shi er tong xie\n序列 9: hao die jia shi er tong xie\n序列 10: hao die you shi er tong xie\nTop K 汉字序列 (按联合概率排序):\n序列 1: 后天就是儿童节\n序列 2: 虹天就是儿童节\n序列 3: 钻研就是儿童节\n序列 4: 航天就是儿童节\n序列 5: 入天就是儿童节\n序列 6: 傲天就是儿童节\n序列 7: 滑天就是儿童节\n序列 8: 话天就是儿童节\n序列 9: 化天就是儿童节\n序列 10: 划天就是儿童节",
+    "output": "后天就是儿童节"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: cong ke ji jia gang shi shi lao\n序列 2: cong ke ji jia gang shu shi lao\n序列 3: cong ke ji jia gang shi shi ang\n序列 4: cong wo ji jia gang shi shi lao\n序列 5: cong ke ji jia gang shu shi ang\n序列 6: cong ke ji jia gang shi shi gang\n序列 7: cong ke jue jia gang shi shi lao\n序列 8: cong ke ji jia gang shi shi lai\n序列 9: cong wo ji jia gang shu shi lao\n序列 10: cong ke ji jia gang shu shi gang\nTop K 汉字序列 (按联合概率排序):\n序列 1: 从表姐家扛书出来\n序列 2: 从表姐家扛书出来\n序列 3: 从表姐家扛书起来\n序列 4: 从表姐家扛书惜了\n序列 5: 从表姐家扛书惜了\n序列 6: 从表姐家扛书师来\n序列 7: 从表姐家扛书适来\n序列 8: 从表姐家扛书实来\n序列 9: 从表姐家扛书视来\n序列 10: 从表姐家扛书师来",
+    "output": "从表姐家扛书出来"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: ma fan ni cou lu ting dian\n序列 2: pa fan ni cou lu ting dian\n序列 3: ma fan ni zou lu ting dian\n序列 4: ba fan ni cou lu ting dian\n序列 5: pa fan ni zou lu ting dian\n序列 6: ma fan ni cou lu ting die\n序列 7: ma fan ni cou lu ting diao\n序列 8: ba fan ni zou lu ting dian\n序列 9: ma fan ni jiu lu ting dian\n序列 10: ma fan ni zong lu ting dian\nTop K 汉字序列 (按联合概率排序):\n序列 1: 麻烦你走路轻点\n序列 2: 麻烦你走路轻点\n序列 3: 划烦你走路轻点\n序列 4: 化烦你走路轻点\n序列 5: 滑烦你走路轻点\n序列 6: 话烦你走路轻点\n序列 7: 装烦你走路轻点\n序列 8: 壮烦你走路轻点\n序列 9: 业烦你走路轻点\n序列 10: 叶烦你走路轻点",
+    "output": "麻烦你走路轻点"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: le yin qi ye qiong dao fa ha\n序列 2: le yin qi ye qiong dao kuang ha\n序列 3: le yin qi ye qiong dao guang ha\n序列 4: le yin qi ye qiong dao hua ha\n序列 5: le yin qi ye qiong da fa ha\n序列 6: le yin qi ye bie dao fa ha\n序列 7: le yin qi ye qiong da kuang ha\n序列 8: le yin qi ye bie dao kuang ha\n序列 9: le yin qi ye qiong du fa ha\n序列 10: le yin qi ye qiong dao pa ha\nTop K 汉字序列 (按联合概率排序):\n序列 1: 录音期间别讲话哈\n序列 2: 录音期二别讲话哈\n序列 3: 量音期间别讲话哈\n序列 4: 药音期间别讲话哈\n序列 5: 量音期二别讲话哈\n序列 6: 药音期二别讲话哈\n序列 7: 滑音期间别讲话哈\n序列 8: 话音期间别讲话哈\n序列 9: 化音期间别讲话哈\n序列 10: 划音期间别讲话哈",
+    "output": "录音期间别讲话哈"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: hong wan ni bing bu na jian\n序列 2: hong huan ni bing bu na jian\n序列 3: kong wan ni bing bu na jian\n序列 4: hong gan ni bing bu na jian\n序列 5: kua wan ni bing bu na jian\n序列 6: kong huan ni bing bu na jian\n序列 7: wu wan ni bing bu na jian\n序列 8: hong wan ni bing bu na jia\n序列 9: kua huan ni bing bu na jian\n序列 10: wo wan ni bing bu na jian\nTop K 汉字序列 (按联合概率排序):\n序列 1: 喝完一瓶葡萄酒\n序列 2: 虹完一瓶葡萄酒\n序列 3: 雾完一瓶葡萄酒\n序列 4: 物完一瓶葡萄酒\n序列 5: 裤完一瓶葡萄酒\n序列 6: 夸我一瓶葡萄酒\n序列 7: 故完一瓶葡萄酒\n序列 8: 傲完一瓶葡萄酒\n序列 9: 掉完一瓶葡萄酒\n序列 10: 调完一瓶葡萄酒",
+    "output": "喝完一瓶葡萄酒"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: qian zi you yong zhuan yuan\n序列 2: qian cao you yong zhuan yuan\n序列 3: qian san you yong zhuan yuan\n序列 4: qian zi you yong min yuan\n序列 5: qian zi you yong chuo yuan\n序列 6: qian sai you yong zhuan yuan\n序列 7: qian zi you yong lo yuan\n序列 8: qian cao you yong min yuan\n序列 9: qian lou you yong zhuan yuan\n序列 10: qian zi you yong shi yuan\nTop K 汉字序列 (按联合概率排序):\n序列 1: 齐的楼宇绰约\n序列 2: 色的楼宇绰约\n序列 3: 狼的楼宇绰约\n序列 4: 歌的楼宇绰约\n序列 5: 的石头女绰约\n序列 6: 捐的楼宇绰约\n序列 7: 解散步女绰约\n序列 8: 的石头宇绰约\n序列 9: 齐的楼宇绰约\n序列 10: 齐的楼宇绰约",
+    "output": "参差楼宇绰约"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: zhe zhuang mian lan zhang ta gan ga you xiang wu\n序列 2: zhe zhuang mian lan zhang ta gan ga you zhou wu\n序列 3: zhe zhuang mian lun zhang ta gan ga you xiang wu\n序列 4: zhe zhuang mian lun zhang ta gan ga you zhou wu\n序列 5: zhe zhuang mian lan zhang ta gan ka you xiang wu\n序列 6: zhe zhuang mian lan zhang ta guan ga you xiang wu\n序列 7: zhe zhuang miao lan zhang ta gan ga you xiang wu\n序列 8: zhe zhong mian lan zhang ta gan ga you xiang wu\n序列 9: zhe zhuang mian lan zhang ta gan ka you zhou wu\n序列 10: zhe zhuang mian lun zhang ta gan ka you xiang wu\nTop K 汉字序列 (按联合概率排序):\n序列 1: 这种谬论让他尴尬又窘迫\n序列 2: 者种谬论让他尴尬又窘迫\n序列 3: 只种谬论让他尴尬又窘迫\n序列 4: 这种谬论着他尴尬又窘迫\n序列 5: 这种谬论让他尴尬又窘迫\n序列 6: 这种谬论让他尴尬又窘迫\n序列 7: 这种谬论让他尴尬又窘迫\n序列 8: 筝种谬论让他尴尬又窘迫\n序列 9: 这种谬论让他尴尬又窘迫\n序列 10: 账种谬论让他尴尬又窘迫",
+    "output": "这种谬论让他尴尬又窘迫"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: diao bu fu you ri qing de chang dao le peng yang\n序列 2: miao bu fu you ri qing de chang dao le peng yang\n序列 3: diao bu fu you ri qing de chang de le peng yang\n序列 4: miao bu fu you ri qing de chang de le peng yang\n序列 5: niao bu fu you ri qing de chang dao le peng yang\n序列 6: niao bu fu you ri qing de chang de le peng yang\n序列 7: diao bu fu you ri qing de zhou dao le peng yang\n序列 8: miao bu fu you ri qing de zhou dao le peng yang\n序列 9: diao bu fu you ri qing de zhou de le peng yang\n序列 10: miao bu fu you ri qing de zhou de le peng yang\nTop K 汉字序列 (按联合概率排序):\n序列 1: 他佩服又热情地招待了盟友\n序列 2: 调佩服又热情地招待了盟友\n序列 3: 掉佩服又热情地招待了盟友\n序列 4: 鸟佩服又热情地招待了盟友\n序列 5: 玉佩服又热情地招待了盟友\n序列 6: 钮佩服又热情地招待了盟友\n序列 7: 调步服又热情地招待了盟友\n序列 8: 掉步服又热情地招待了盟友\n序列 9: 进步服又热情地招待了盟友\n序列 10: 鸟步服又热情地招待了盟友",
+    "output": "他佩服又热情地招待了盟友"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: pa zao lian deng bi duo shao\n序列 2: pa zao lian deng yu duo shao\n序列 3: pa zao lian deng dou duo shao\n序列 4: pa zao lian deng nao duo shao\n序列 5: pa zao lian deng you duo shao\n序列 6: pa zao lian deng yao duo shao\n序列 7: kua zao lian deng bi duo shao\n序列 8: pa zha lian deng bi duo shao\n序列 9: pa zao lian deng bi duo shui\n序列 10: kua zao lian deng yu duo shao\nTop K 汉字序列 (按联合概率排序):\n序列 1: 五加六等于多少\n序列 2: 雾加六等于多少\n序列 3: 物加六等于多少\n序列 4: 五加六等于多少\n序列 5: 迫加六等于多少\n序列 6: 坡加六等于多少\n序列 7: 以加六等于多少\n序列 8: 虹加六等于多少\n序列 9: 划加六等于多少\n序列 10: 化加六等于多少",
+    "output": "五加六等于多少"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: zhe zheng qi xin guan nv ba\n序列 2: zhe zheng shang xin guan nv ba\n序列 3: zhe zheng se xin guan nv ba\n序列 4: zhe zheng qi jin guan nv ba\n序列 5: zhe zheng shang jin guan nv ba\n序列 6: zhe zheng zhao xin guan nv ba\n序列 7: zhe zen qi xin guan nv ba\n序列 8: zhe zen shang xin guan nv ba\n序列 9: zhe ren qi xin guan nv ba\n序列 10: zhe zheng se jin guan nv ba\nTop K 汉字序列 (按联合概率排序):\n序列 1: 这正是新款皮包\n序列 2: 这正是新款皮包\n序列 3: 者正是新款皮包\n序列 4: 者正是新款皮包\n序列 5: 这正是新款皮包\n序列 6: 这正是新款皮包\n序列 7: 他正是新款皮包\n序列 8: 只正是新款皮包\n序列 9: 账正是新款皮包\n序列 10: 他正是新款皮包",
+    "output": "这正是新款皮包"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: zhu ge liao liu shang jin nang\n序列 2: zhu ge liao liu xiang jin nang\n序列 3: zhu ge liao liu shang jin lang\n序列 4: zhu ge liao niu shang jin nang\n序列 5: zhu ge liao liu xiang jin lang\n序列 6: zhu ge liao liu shang jin lao\n序列 7: zhu ge liao niu xiang jin nang\n序列 8: zhu ge liao niu shang jin lang\n序列 9: zhu ge liao liu shao jin nang\n序列 10: zhu ge liao liu xiang jin lao\nTop K 汉字序列 (按联合概率排序):\n序列 1: 诸葛亮留下锦囊\n序列 2: 逐葛亮留下锦囊\n序列 3: 诸葛亮留下锦囊\n序列 4: 烛葛亮留下锦囊\n序列 5: 祝葛亮留下锦囊\n序列 6: 只葛亮留下锦囊\n序列 7: 处葛亮留下锦囊\n序列 8: 束葛亮留下锦囊\n序列 9: 恕葛亮留下锦囊\n序列 10: 书葛亮留下锦囊",
+    "output": "诸葛亮留下锦囊"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: ta shuai duan de gan dan le hen deng\n序列 2: ta shuai duan de gan hao le hen deng\n序列 3: ta shai duan de gan dan le hen deng\n序列 4: ta shai duan de gan hao le hen deng\n序列 5: ta shuo duan de gan dan le hen deng\n序列 6: ta shuo duan de gan hao le hen deng\n序列 7: ta shuai tong de gan dan le hen deng\n序列 8: ta shuai tong de gan hao le hen deng\n序列 9: ta shuai duan de gan dan le hen teng\n序列 10: ta shuai duan de gan hao le hen teng\nTop K 汉字序列 (按联合概率排序):\n序列 1: 他双腿都感染了很疼\n序列 2: 他双腿都感染了很多\n序列 3: 他双腿饼干给了很疼\n序列 4: 他双腿都感染了很疼\n序列 5: 他双腿都感染了很疼\n序列 6: 跳双腿都感染了很疼\n序列 7: 他双腿灯感染了很疼\n序列 8: 他双腿灯干给了很疼\n序列 9: 他双腿都感染了很晒\n序列 10: 他双腿都感染料很疼",
+    "output": "他双腿都感染了很疼"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: jiu suan ji shi yao wu wu qian ou piao\n序列 2: jiu suan ji shi yao wu wu qian ou miao\n序列 3: jiu suan ji xi yao wu wu qian ou piao\n序列 4: jiu suan ji xi yao wu wu qian ou miao\n序列 5: jiu suan ji shi yao wu wu qian ou pie\n序列 6: jiu suan ji xi yao wu wu qian ou pie\n序列 7: jiu suan ji shu yao wu wu qian ou piao\n序列 8: jiu suan ji fu yao wu wu qian ou piao\n序列 9: jiu suan ji shu yao wu wu qian ou miao\n序列 10: jiu suan ji shi yao wu wu qian ou xia\nTop K 汉字序列 (按联合概率排序):\n序列 1: 穷孙子需要五毛钱邮票\n序列 2: 总算子需要五毛钱邮票\n序列 3: 外孙子需要五毛钱邮票\n序列 4: 架孙子需要五毛钱邮票\n序列 5: 禁孙子需要五毛钱邮票\n序列 6: 箱孙子需要五毛钱邮票\n序列 7: 穷孙子需要五毛钱邮票\n序列 8: 友孙子需要五毛钱邮票\n序列 9: 亏孙子需要五毛钱邮票\n序列 10: 愧孙子需要五毛钱邮票",
+    "output": "穷孙子需要五毛钱邮票"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: ta cang tiao kui zuo zhou guan ming\n序列 2: ta cang tiao kui zou zhou guan ming\n序列 3: ta cang tiao kui zai zhou guan ming\n序列 4: ta cang tiao kui zuo zhou ban ming\n序列 5: ta qiang tiao kui zuo zhou guan ming\n序列 6: ta cang tiao kui zou zhou ban ming\n序列 7: ta cang tiao kui zai zhou ban ming\n序列 8: ta kuang tiao kui zuo zhou guan ming\n序列 9: ta qiang tiao kui zou zhou guan ming\n序列 10: ta qiang tiao kui zai zhou guan ming\nTop K 汉字序列 (按联合概率排序):\n序列 1: 他恰恰会做肉拌面\n序列 2: 恰恰恰会做肉拌面\n序列 3: 讨论恰会做肉拌面\n序列 4: 船舱恰会做肉拌面\n序列 5: 打架恰会做肉拌面\n序列 6: 功课恰会做肉拌面\n序列 7: 那条恰会做肉拌面\n序列 8: 宾客恰会做肉拌面\n序列 9: 擦伤恰会做肉拌面\n序列 10: 架恰恰会做肉拌面",
+    "output": "他恰恰会做肉拌面"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: ta yuan xiang han xiang hen niu\n序列 2: ta que xiang han xiang hen niu\n序列 3: ta yuan xiang han shang hen niu\n序列 4: ta que xiang han shang hen niu\n序列 5: ta yuan xiang han xiang hei niu\n序列 6: ta chuai xiang han xiang hen niu\n序列 7: ta que xiang han xiang hei niu\n序列 8: ta guai xiang han xiang hen niu\n序列 9: ta yuan xiao han xiang hen niu\n序列 10: ta que xiao han xiang hen niu\nTop K 汉字序列 (按联合概率排序):\n序列 1: 他悄悄按下按钮\n序列 2: 他悄悄按下按钮\n序列 3: 他横下按下按钮\n序列 4: 悄悄悄按下按钮\n序列 5: 他横下按下按钮\n序列 6: 他吞下按下按钮\n序列 7: 悄悄悄按下按钮\n序列 8: 他吞下按下按钮\n序列 9: 他悄悄按下按钮\n序列 10: 他悄悄按下按钮",
+    "output": "他悄悄按下按钮"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: tao heng bu liang guo de ze guo\n序列 2: tao heng bu liang guo de zi guo\n序列 3: tao heng bu liang guo de za guo\n序列 4: tao keng bu liang guo de ze guo\n序列 5: ta heng bu liang guo de ze guo\n序列 6: tao er bu liang guo de ze guo\n序列 7: tao keng bu liang guo de zi guo\n序列 8: tao geng bu liang guo de ze guo\n序列 9: ta heng bu liang guo de zi guo\n序列 10: tao keng bu liang guo de za guo\nTop K 汉字序列 (按联合概率排序):\n序列 1: 他横渡辽阔的泽国\n序列 2: 他横渡辽阔的泽国\n序列 3: 他横渡辽阔的泽国\n序列 4: 他横渡辽阔的泽国\n序列 5: 他横渡亮阔的泽国\n序列 6: 他横渡量阔的泽国\n序列 7: 票横渡辽阔的泽国\n序列 8: 讨论渡辽阔的泽国\n序列 9: 炮横渡辽阔的泽国\n序列 10: 匹横渡辽阔的泽国",
+    "output": "他横渡辽阔的泽国"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: biao shou zuan jing gui san xie\n序列 2: mou shou zuan jing gui san xie\n序列 3: biao shou cun jing gui san xie\n序列 4: mou shou cun jing gui san xie\n序列 5: ni shou zuan jing gui san xie\n序列 6: kou shou zuan jing gui san xie\n序列 7: ni shou cun jing gui san xie\n序列 8: kou shou cun jing gui san xie\n序列 9: biao shou tong jing gui san xie\n序列 10: fa shou zuan jing gui san xie\nTop K 汉字序列 (按联合概率排序):\n序列 1: 妙手丹青绘山水\n序列 2: 对手丹青绘山水\n序列 3: 妙手丹青绘山峰\n序列 4: 对手丹青绘山峰\n序列 5: 妙手丹青绘山寨\n序列 6: 对手丹青绘山寨\n序列 7: 妙手丹青绘山顶\n序列 8: 对手丹青绘山顶\n序列 9: 顺手丹青绘山水\n序列 10: 妙手丹青绘山坡",
+    "output": "妙手丹青绘山水"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: zao yi ku shang xi guo ma\n序列 2: zang yi ku shang xi guo ma\n序列 3: zao yi ku shua xi guo ma\n序列 4: zang yi ku shua xi guo ma\n序列 5: zao yi ku shuang xi guo ma\n序列 6: zang yi ku shuang xi guo ma\n序列 7: zong yi ku shang xi guo ma\n序列 8: zong yi ku shua xi guo ma\n序列 9: zao yi ku chong xi guo ma\n序列 10: zang yi ku chong xi guo ma\nTop K 汉字序列 (按联合概率排序):\n序列 1: 脏衣裤刷洗过吗\n序列 2: 脏衣裤刷洗过吗\n序列 3: 造衣裤刷洗过吗\n序列 4: 脏衣裤刷洗过吗\n序列 5: 架衣裤刷洗过吗\n序列 6: 舱衣裤刷洗过吗\n序列 7: 量衣裤刷洗过吗\n序列 8: 警衣裤刷洗过吗\n序列 9: 睛衣裤刷洗过吗\n序列 10: 京衣裤刷洗过吗",
+    "output": "脏衣裤刷洗过吗"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: can ci bu qian de lou yu\n序列 2: cen ci bu qian de lou yu\n序列 3: cui ci bu qian de lou yu\n序列 4: zai ci bu qian de lou yu\n序列 5: cang ci bu qian de lou yu\n序列 6: can zi bu qian de lou yu\n序列 7: can si bu qian de lou yu\n序列 8: can ci bu qi de lou yu\n序列 9: cen zi bu qian de lou yu\n序列 10: jue ci bu qian de lou yu\nTop K 汉字序列 (按联合概率排序):\n序列 1: 餐此不齐的楼宇\n序列 2: 舱此不齐的楼宇\n序列 3: 从此不齐的楼宇\n序列 4: 参差不齐的楼宇\n序列 5: 参差不齐的楼宇\n序列 6: 气此不齐的楼宇\n序列 7: 切此不齐的楼宇\n序列 8: 且此不齐的楼宇\n序列 9: 阔此不齐的楼宇\n序列 10: 架此不齐的楼宇",
+    "output": "参差不齐的楼宇"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: xia tian ni chuan chang ku ma\n序列 2: xia tian ni chuan chang ke ma\n序列 3: xia tian ni chan chang ku ma\n序列 4: xia tian ni ruan chang ku ma\n序列 5: xia tian ni ran chang ku ma\n序列 6: xia tian ni cuan chang ku ma\n序列 7: xia tian ni chuan chang ku ba\n序列 8: xia tian ni chan chang ke ma\n序列 9: xia tian ni ruan chang ke ma\n序列 10: xia tian ni ran chang ke ma\nTop K 汉字序列 (按联合概率排序):\n序列 1: 夏天你穿长裤吗\n序列 2: 夏天你穿长裤吗\n序列 3: 美天你穿长裤吗\n序列 4: 妹天你穿长裤吗\n序列 5: 箱天你穿长裤吗\n序列 6: 以天你穿长裤吗\n序列 7: 夏天你穿长裤步\n序列 8: 夏天你穿长裤步\n序列 9: 校天你穿长裤吗\n序列 10: 夏天你穿长裤画",
+    "output": "夏天你穿长裤吗"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: wo ke shui fou xi yi jian\n序列 2: wo ke shui fou qi yi jian\n序列 3: zhe ke shui fou xi yi jian\n序列 4: zhe ke shui fou qi yi jian\n序列 5: wo ke shui fou ti yi jian\n序列 6: gong ke shui fou xi yi jian\n序列 7: gong ke shui fou qi yi jian\n序列 8: zhe ke shui fou ti yi jian\n序列 9: wo ke shui fa xi yi jian\n序列 10: wo ke shui fa qi yi jian\nTop K 汉字序列 (按联合概率排序):\n序列 1: 顾客是否提意见\n序列 2: 者客是否提意见\n序列 3: 功课是否提意见\n序列 4: 贵客是否提意见\n序列 5: 狗客是否提意见\n序列 6: 果客是否提意见\n序列 7: 国客是否提意见\n序列 8: 禁客是否提意见\n序列 9: 见客是否提意见\n序列 10: 间客是否提意见",
+    "output": "顾客是否提意见"
+  },
+  {
+    "instruction": "根据按概率排序的候选拼音音节序列和候选汉字句子，生成最符合语义且最自然的最终中文句子。可以直接选择候选，也可以在候选基础上纠错。只输出最终句子，不要解释。",
+    "input": "Top K 音节序列 (按联合概率排序):\n序列 1: xin xi e bie cai qu da luan qian shang\n序列 2: xin xi e mai cai qu da luan qian shang\n序列 3: xin xi e bie zai qu da luan qian shang\n序列 4: xin xi e mai zai qu da luan qian shang\n序列 5: xin xi e bie cai qu da luan jian shang\n序列 6: xin xi guo bie cai qu da luan qian shang\n序列 7: xin xi e mai cai qu da luan jian shang\n序列 8: xin xi guo mai cai qu da luan qian shang\n序列 9: xin xi e bie zai qu da luan jian shang\n序列 10: xin xi guo bie zai qu da luan qian shang\nTop K 汉字序列 (按联合概率排序):\n序列 1: 近期二别凑去打篮球赛\n序列 2: 星期二别凑去打篮球赛\n序列 3: 近期二别凑去打篮球鞋\n序列 4: 剖析二别凑去打篮球赛\n序列 5: 游戏二别凑去打篮球赛\n序列 6: 禁期二别凑去打篮球赛\n序列 7: 星期二别凑去打篮球鞋\n序列 8: 音期二别凑去打篮球赛\n序列 9: 近期间别凑去打篮球赛\n序列 10: 禁戏二别凑去打篮球赛",
+    "output": "星期二别凑去打篮球赛"
+  }
+]
